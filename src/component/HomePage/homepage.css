@@ -122,3 +122,44 @@
     text-decoration: underline;
 }
 
+#smallbox40{
+    margin-top: 120px;
+    height: 630px;
+    border: 2px solid green;
+    background-color: rgb(246,246,244);
+}
+#smallbox41{
+    margin-top: 120px;
+    font-size: 50px;
+    font-family:"Means Web", Georgia, Times, "Times New Roman", serif;
+}
+#smallbox42{
+    margin-top: 25px;
+    font-size: 20px;
+    color:rgb(64, 59, 59);
+    font-weight: 300;
+}
+#smallbox43{
+    width: 58%;
+    margin: auto;
+    height: 200px;
+    margin-top: 25px;
+    font-size: 20px;
+    color:rgb(64, 59, 59);
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: repeat(3,23%);
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+#smallbox43>div>img{
+    height:60%;
+    width: 80%;
+}
+#smallbox43>div>div{
+    font-size:16px;
+    margin-top: 15px;
+}
+
+

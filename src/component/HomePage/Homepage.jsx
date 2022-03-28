@@ -113,6 +113,36 @@ export const Homepage = () => {
             <div id="smallbox312">Insights & analytics tools</div>
           </div>
         </div>
+        <div id="smallbox40">
+          <div id="smallbox41">Grow with Mailchimp</div>
+          <div id="smallbox42">
+            Our marketing platform helps brands like these build their thing and
+            keep it growing.
+          </div>
+          <div id="smallbox43">
+            <div>
+              <img
+                src="https://eep.io/images/yzco4xsimv0y/1UwhzIHudUfFf3IEgUQpLw/4538fff06cb2c15bfae0f2764728ef2f/new-belgium-brewing-logo-A417F22C28-seeklogo.com.png?w=520&fm=webp&q=80"
+                alt=""
+              />
+              <div>Customers since 2011</div>
+            </div>
+            <div>
+              <img
+                src="https://eep.io/images/yzco4xsimv0y/jZxPQXjesCQjeR0xljc3b/d4e4cf06f6b4951aeab9a41db21f9362/Vimeo_bw.png?w=520&fm=webp&q=80"
+                alt=""
+              />
+              <div>Customers since 2012</div>
+            </div>
+            <div>
+              <img
+                src="https://eep.io/images/yzco4xsimv0y/3eGTzHLQxE5I3jBWcPNR7u/efdd88aeb06177041587a91afea4d697/_ted-logo-black-ted-logo-black-and-white.png?w=520&fm=webp&q=80"
+                alt=""
+              />
+              <div>Customers since 2010</div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
