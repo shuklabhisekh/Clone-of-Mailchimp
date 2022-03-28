@@ -1,0 +1,56 @@
+.header {
+  height: 100vh;
+  background-color: #ffe01b;
+  display: flex;
+  align-items: center;
+  color: #241c15;
+  padding-top: 9.5%;
+  box-sizing: border-box;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.header > div {
+  /* border: 3px solid black; */
+  flex-basis: 35%;
+  padding: 15px 20px;
+}
+
+.header h1 {
+  font-size: 54px;
+  color: #241c15;
+  letter-spacing: -0.5px;
+  font-weight: 300;
+  font-family: "Means Web";
+  line-height: 54px;
+}
+
+.header p {
+  font-size: 24px;
+  line-height: 33.6px;
+  font-family: "Graphik Web Light";
+}
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header button {
+  font-size: 15px;
+  padding: 20px 40px;
+  border: none;
+  line-height: 20.25px;
+  font-weight: 600;
+}
+
+.header a {
+  color: #0e5652;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 20px;
+}
+.header a:hover {
+  text-decoration: underline;
+  color: #002023;
+}

@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "Means Web";
+  src: local("Means Web"),
+    url(./font/Means-Light-Web.7121f5d6.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Graphik Web Medium";
+  src: local("Graphik Web Medium"),
+    url(./font/Graphik-Medium-Web.dcadfa4d.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Graphik Web Light";
+  src: local("Graphik Web Light"),
+    url(./font/Graphik-Light-Web.0b54523d.woff2) format("woff2");
+}

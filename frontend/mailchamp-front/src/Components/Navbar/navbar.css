@@ -1,0 +1,71 @@
+.navbar * {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  font-family: "Graphik Web Medium";
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  color: #241c15;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #ffe01b;
+}
+
+.navbar:hover {
+  background-color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 30px;
+}
+
+.login {
+  border: 1px solid black;
+  padding: 12px 25px;
+}
+
+.signup {
+  padding: 13px 15px;
+  background-color: #007c89;
+  color: #fff;
+}
+
+.submenu {
+  position: absolute;
+  /* top: 12%; */
+  width: 30%;
+  height: 100vh;
+  z-index: 88;
+  background: #fff;
+  overflow: scroll;
+}
+.navbar--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 25%;
+}
+
+.navbar--center img:first-child {
+  width: 9.5%;
+  height: 9.5%;
+}
+
+.navbar--center img:last-child {
+  width: 35%;
+  height: 35%;
+  margin-left: 1%;
+}
