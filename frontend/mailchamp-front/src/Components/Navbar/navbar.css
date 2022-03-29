@@ -9,10 +9,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow-x: hidden;
-  position: fixed;
+  overflow: hidden;
+  position: static;
   top: 0;
-  z-index: 999;
+  z-index: 99;
   width: 100%;
   color: #241c15;
   font-weight: 500;
@@ -28,8 +28,11 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 30px;
   padding: 0 30px;
+}
+
+.navbar--right ul {
+  gap: 30px;
 }
 
 .login {
@@ -43,15 +46,6 @@
   color: #fff;
 }
 
-.submenu {
-  position: absolute;
-  /* top: 12%; */
-  width: 30%;
-  height: 100vh;
-  z-index: 88;
-  background: #fff;
-  overflow: scroll;
-}
 .navbar--center {
   display: flex;
   align-items: center;
@@ -68,4 +62,106 @@
   width: 35%;
   height: 35%;
   margin-left: 1%;
+}
+
+.subnavbtn {
+  font-size: inherit;
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 30px 12px;
+  /* border: 1px solid black; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.subnavbtn a {
+  padding: 0.5px;
+  text-decoration: none;
+  color: #241c15;
+}
+.subnav:hover a,
+.subnavbtn:hover a {
+  color: teal;
+  border-bottom: 2px solid teal;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  width: 33%;
+  height: 89vh;
+  z-index: 11;
+  overflow-y: auto;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.subnav-title {
+  color: #727070;
+  font-size: 12.6738px;
+  line-height: 17.1096px;
+  font-weight: 500;
+}
+
+.subnav-content > ul {
+  display: block;
+}
+.subnav-list li {
+  /* display: block; */
+  border-top: 0.0625rem solid #8c8c8c;
+  padding: 45px 0;
+}
+
+.subnav-list li:first-child {
+  padding-top: 25px;
+  border-top: none;
+}
+.subnav-list li:last-child {
+  border-top: none;
+  padding: 25px 0;
+  margin-top: -35px;
+}
+
+.subnav-header {
+  font-size: 20.695px;
+  line-height: 27.9383px;
+  font-family: "Means Web";
+  padding: 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow-color {
+  filter: invert(61%) sepia(0) saturate(7%) hue-rotate(163deg) brightness(90%)
+    contrast(92%);
+}
+
+.subnav-para {
+  font-size: 12.6738px;
+  line-height: 19.0106px;
+  color: #403b3b;
+  font-weight: 200;
+  margin: 10px 0;
+}
+
+.link {
+  color: teal;
+  font-size: 12.6738px;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+
+.subnav-title img {
+  padding: 16px 0;
 }
