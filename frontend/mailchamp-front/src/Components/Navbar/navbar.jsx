@@ -4,11 +4,21 @@ import logo_name from "../../imges/name.svg";
 import search from "../../imges/search.svg";
 import web from "../../imges/web.svg";
 import right_cart from "../../imges/caretRight.svg";
-
+import { useState } from "react";
 import "./navbar.css";
 function Navbar() {
+  const [Navbar, setNavbar] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 66) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeNavbarColor);
   return (
-    <div>
+    <div className={Navbar ? `sticky white` : `sticky yellow`}>
       <nav className="navbar">
         <div className="navbar--left">
           <ul>

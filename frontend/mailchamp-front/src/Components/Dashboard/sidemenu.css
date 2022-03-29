@@ -1,0 +1,91 @@
+.sidemenu {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-right: 1px solid rgba(36, 28, 21, 0.15);
+  border-left: 8px solid #ffe01b;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidemenu-small.sidemenu {
+  width: 70px;
+}
+
+.sidemenu-small .admin-logo img {
+  width: 150px;
+}
+
+.sidemenu-small:hover {
+  width: 260px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+  padding: 10px 20px;
+  padding-right: 15px;
+}
+
+.create {
+  padding: 10px 13px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-family: "Means Web";
+}
+
+.collpase {
+  border: 2px solid black;
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+
+.collpase:before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 100%;
+  bottom: -0.5px;
+  background: teal;
+}
+
+.admin-logo {
+  padding: 18px;
+  padding-bottom: 15px;
+  justify-content: space-between;
+}
+
+.profile {
+  height: 18vh;
+  padding: 10px;
+}
+
+.profile > button {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 45px;
+  background-color: #d1e7ea;
+  color: #004e56;
+}
+
+.profile > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}

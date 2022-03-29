@@ -3,6 +3,17 @@
   padding: 0;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.yellow {
+  background-color: #ffe01b;
+}
+.white {
+  background-color: #fff;
+}
+
 .navbar {
   font-family: "Graphik Web Medium";
   height: 12vh;
@@ -10,14 +21,11 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  position: static;
-  top: 0;
   z-index: 99;
   width: 100%;
   color: #241c15;
   font-weight: 500;
   font-size: 14px;
-  background-color: #ffe01b;
 }
 
 .navbar:hover {

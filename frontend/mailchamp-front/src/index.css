@@ -29,3 +29,9 @@ code {
   src: local("Graphik Web Light"),
     url(./font/Graphik-Light-Web.0b54523d.woff2) format("woff2");
 }
+
+@font-face {
+  font-family: "Graphik Web Regular";
+  src: local("Graphik Web Regular"),
+    url(./font/Graphik-Regular-Web.11b60cc4.woff2) format("woff2");
+}
