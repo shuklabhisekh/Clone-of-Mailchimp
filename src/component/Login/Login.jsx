@@ -81,16 +81,13 @@ export default function SignInSide() {
               //   alignItems: "center",
             }}
           >
-            <Avatar
-              img={{
-                m: 1,
-                bgcolor: "secondary.main",
-                backgroundImage:
-                  "https://login.mailchimp.com/release/1.1.1cf6f186fff809e72c1926a6889fdf8a84b938d52/images/brand_assets/logos/mc-freddie-dark.svg",
-              }}
-            >
-              <LockOutlinedIcon />
-            </Avatar>
+            <div>
+              {" "}
+              <img
+                id="logo"
+                src="https://login.mailchimp.com/release/1.1.1cf6f186fff809e72c1926a6889fdf8a84b938d52/images/brand_assets/logos/mc-freddie-dark.svg"
+              />{" "}
+            </div>
             <Typography
               component="h1"
               variant="h4"
@@ -141,12 +138,13 @@ export default function SignInSide() {
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
                 style={{ backgroundColor: "rgb(0,124,137)" }}
+                id="loginButton"
               >
-                Sign In
+                Log In
               </Button>
               <FormControlLabel
-                id="checkbox"
                 control={<Checkbox value="remember" color="primary" />}
+                style={{ color: "rgb(0,124,137)" }}
                 label="Keep me logged in"
               />
               <Grid container>
