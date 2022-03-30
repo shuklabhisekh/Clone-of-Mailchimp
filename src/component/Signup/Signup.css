@@ -1,21 +1,19 @@
 
 #smallbox0{
-    border: 2px solid red;
-    height: 730px;
     font-family:
     "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    /* margin: 0px; */
    
 }
 #smallbox1{
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: right;
     background-color: rgb(255,224,27);
     background-image: url("https://login.mailchimp.com/release/1.1.1cf6f186fff809e72c1926a6889fdf8a84b938d52/images/brand_assets/illos/art-hero-flowers.png");
 }
 #smallbox2{
-    height: 100%;
-    border: 3px solid maroon;
+    /* height: 100%; */
     width: 78%;
     background-color: white;
    
@@ -26,10 +24,10 @@
     margin-top: 10px;
 }
 #smallbox3{
-    border: 2px solid pink;
-    width: 65%;
+    width: 57%;
     margin: auto;
     text-align: left;
+    margin-top: 10px;
 }
 #welcome{
     line-height:
@@ -46,7 +44,79 @@ font-family:
 }
 #create{
     margin-top: 10px;
+    font-size: 16px;
 }
 #create>span{
     color: darkcyan;
+    cursor: pointer;
+}
+
+#form{
+    margin-top: 20px;
+}
+
+#email{
+    font-weight: 600;
+    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+
+}
+
+#emailInput{
+    width: 97%;
+    margin: 12px 0px;
+    height: 38px;
+    font-size: 16px;
+    /* color: ; */
+    outline-color: darkcyan;
+}
+
+#checkbox{
+    transform: scale(2);
+    border: none;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#spamMail{
+    margin-left: 20px;
+    font-size: 14px;
+}
+#spamMail>label,#terms>span{
+    color: darkcyan;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#terms{
+    font-size: 14px;
+    line-height:
+21px;
+}
+#button{
+    width: 160px;
+    height: 40px;
+    border: 1px solid #dedddc;
+    color: #bdbbb9;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: "Graphik Web","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    height: 48px;
+    line-height: 46px;
+    font-size: 16px;
+    background-color: white;
+
+}
+#button:hover{
+    background-color: darkcyan;
+    color: white;
+}
+#credit{
+    color:rgba(36, 28, 21, 0.65);
+    font-size:12px;
+    margin-top:60px;
+    margin-bottom:20px;
 }
