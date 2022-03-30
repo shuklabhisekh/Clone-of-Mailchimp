@@ -149,18 +149,24 @@ export const Content = ({ toggle }) => {
         <div className="audience2">
           <div>
             <h2>Total Audience</h2>
-            <p>add contact</p>
+            <p className="color-teal">Add contact</p>
           </div>
           <div>
             <h1>1</h1>
-            <p>+1 (+100%) this week</p>
+            <p>
+              +1 (<span className="color-teal">+100%</span>) this week
+            </p>
           </div>
           <div>
+            <h3 style={{ fontSize: "16px" }}>Total audience breakdown</h3>
+
             <div>
-              <h3>Total audience breakdown</h3>
-              <p>+1 (+100%) this week</p>
+              <p>
+                ss <br />
+                +1 (<span className="color-teal">+100%</span>) this week
+              </p>
+              <p>1</p>
             </div>
-            <div>1</div>
           </div>
         </div>
       </div>

@@ -18,9 +18,11 @@ const Accordion = ({ title, icon, content }) => {
       </div>
       {isActive && (
         <div className="accordion-content">
-          {content.map((c) => {
-            return <div>{c}</div>;
-          })}
+          <ul className="accor-subList">
+            {content.map((c) => {
+              return <li>{c}</li>;
+            })}
+          </ul>
         </div>
       )}
     </div>

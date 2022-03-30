@@ -1,9 +1,11 @@
 import "./header.css";
 import headerImg from "../../imges/header.webp";
 import { Homepage } from "./Homepage";
+import Navbar from "../Navbar/navbar";
 function Header() {
   return (
     <div>
+      <Navbar />
       <div className="header">
         <div>
           <h1>

@@ -1,6 +1,6 @@
 .sidemenu {
   height: 100%;
-  width: 260px;
+  width: 265px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -22,7 +22,7 @@
 }
 
 .sidemenu-small:hover {
-  width: 260px;
+  width: 265px;
   background-color: #fff;
   z-index: 1;
 }
@@ -88,4 +88,18 @@
   align-items: center;
   gap: 10px;
   margin: 10px 0;
+}
+
+.accor-subList {
+  font-size: 13px;
+  color: #241c15;
+  line-height: 24px;
+  font-family: "Graphik Web Regular";
+  list-style: none;
+  padding: 0;
+  margin-top: -3px;
+}
+.accor-subList li {
+  padding: 3px 0;
+  padding-left: 60px;
 }

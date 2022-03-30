@@ -4,49 +4,77 @@ import Accordion from "./Accordion";
 import create from "../../imges/sidemenu-icon/create.svg";
 import search from "../../imges/sidemenu-icon/search.svg";
 import logo from "../../imges/logo.svg";
-import { useState } from "react";
+
 export const Sidemenu = ({ stateToggle, toggle }) => {
   const accordionData = [
     {
       title: "Audience",
       icon: "sidemenu-icon/audience.svg",
-      content: ["Audience Dashboard", "All Contact"],
+      content: [
+        "Audience Dashboard",
+        "All Contacts",
+        "Signup froms",
+        "Tag",
+        "Segments",
+        "Surveys",
+        "Preferences center",
+        "Inbox",
+      ],
     },
     {
       title: "Campaigns",
       icon: "sidemenu-icon/champ.svg",
-      content: ["Audience Dashboard", "All Contact"],
+      content: ["All campaigns", "Email templates", "Reports"],
     },
     {
       title: "Automations",
       icon: "sidemenu-icon/auto.svg",
-      content: ["Audience Dashboard", "All Contact"],
+      content: [
+        "Customer Journeys",
+        "Transactional Email",
+        "Retargeting ads",
+        "Postcards",
+      ],
     },
     {
       title: "Website",
       icon: "sidemenu-icon/web.svg",
-      content: ["Audience Dashboard", "All Contact"],
+      content: [
+        "Website",
+        "Store",
+        "Appointments",
+        "Domains",
+        "Settings",
+        "Reports",
+      ],
     },
     {
       title: "Content Studio",
       icon: "sidemenu-icon/studio.svg",
-      content: ["Audience Dashboard", "All Contact"],
+      content: [
+        "Creative Assistant",
+        "My Files",
+        "Products",
+        "Giphy",
+        "Instagram",
+        "My Logo",
+      ],
     },
     {
       title: "Intergrations",
       icon: "sidemenu-icon/intergration.svg",
-      content: ["Audience Dashboard", "All Contact"],
+      content: ["Manage", "Add new"],
     },
   ];
   return (
     <div className={toggle ? `sidemenu sidemenu-small` : "sidemenu"}>
       <div>
         <div className="flex admin-logo">
-          <img src={logo} width="80%" />
+          <img src={logo} width="80%" alt="" />
           <span className="collpase" onClick={stateToggle}></span>
         </div>
         <div className="create flex" style={{ gap: "13px" }}>
-          <img src={create} />
+          <img src={create} alt="" />
           <span>Create</span>
         </div>
         <div className="accordion">
@@ -55,7 +83,7 @@ export const Sidemenu = ({ stateToggle, toggle }) => {
           ))}
         </div>
         <div className="create flex" style={{ padding: "10px 20px" }}>
-          <img src={search} />
+          <img src={search} alt="" />
           <span>Search</span>
         </div>
       </div>
@@ -64,6 +92,7 @@ export const Sidemenu = ({ stateToggle, toggle }) => {
         <div>
           <img
             src="https://www.seekpng.com/png/detail/110-1100707_person-avatar-placeholder.png"
+            alt=""
             width="50px"
             height="50px"
           />

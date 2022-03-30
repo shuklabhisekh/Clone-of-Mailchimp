@@ -1,5 +1,5 @@
 .content {
-  margin-left: 260px;
+  margin-left: 265px;
   padding: 0 70px;
 }
 
@@ -202,6 +202,12 @@
 
 .audience2 {
   flex-basis: 32%;
+  font-family: "Graphik web Regular";
+}
+
+.audience2 p {
+  font-size: 13px;
+  font-family: "Graphik web Medium";
 }
 
 .audience2 > div:first-child {
@@ -210,4 +216,21 @@
   align-items: center;
   border-bottom: 1px solid #efeeea;
   padding: 13px 0;
+}
+
+.audience2 > div:nth-child(2) h1 {
+  margin-bottom: -13px;
+}
+
+.audience2 > div:last-child {
+  padding: 25px 0;
+}
+
+.audience2 > div:last-child > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-teal {
+  color: #004e56;
 }
