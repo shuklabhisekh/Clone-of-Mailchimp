@@ -43,6 +43,37 @@ export default function SignInSide() {
       email: data.get("email"),
       password: data.get("password"),
     });
+    console.log(data.get("email"), "before async function");
+    Register(data);
+    async function Register(e) {
+      try {
+        //   console.log("inside")
+        //    e.preventDefault();
+        var register_data = {
+          // first_name: document.getElementById("f_name").value,
+          // last_name: document.getElementById("l_name").value,
+          // email: document.getElementById("email").value,
+          // password: document.getElementById("password").value,
+          email: e.get("email"),
+          password: e.get("password"),
+        };
+        console.log(register_data, "before stringify");
+        register_data = JSON.stringify(register_data);
+        console.log(register_data, "register data");
+      } catch (err) {
+        console.log(err);
+      }
+      let reg_api = `http://localhost:3000/login`;
+      let responce = await fetch(reg_api, {
+        method: "POST",
+        body: register_data,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      let data = await responce.json();
+      console.log("data send to mongo", data);
+    }
   };
 
   return (
@@ -113,6 +144,7 @@ export default function SignInSide() {
                 margin="normal"
                 required
                 fullWidth
+                onChange={() => console.log("checking")}
                 id="email"
                 // label="Email Address"
                 name="email"
