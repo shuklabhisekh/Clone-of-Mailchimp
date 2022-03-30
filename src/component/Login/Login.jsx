@@ -94,14 +94,12 @@ export default function SignInSide() {
             <Typography
               component="h1"
               variant="h4"
-              //   fontSize={}
-              fontWeight="light"
-              style={{ color: "#241c15" }}
+              id="loginTitle"
               fontFamily={
                 ("Means Web", "Georgia", "Times", "Times New Roman", "serif")
               }
             >
-              Login In
+              Log In
             </Typography>
             <div id="needMailchimp">
               Need a Mailchimp account?{" "}
