@@ -36,3 +36,34 @@
   margin: auto;
   width: 50%;
 }
+
+.Builder-nav + div {
+  height: 90.5vh;
+}
+.Builder-nav {
+  background: #241c15;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+}
+
+.Builder-nav > div {
+  display: flex;
+  align-items: center;
+}
+.Builder-nav > div span {
+  margin-left: -120px;
+  font-family: "Graphik Web Medium";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.Builder-nav > button {
+  padding: 12px 18px;
+  background-color: teal;
+  color: #fff;
+  border: none;
+  font-family: "Graphik Web Medium";
+  border-radius: 2px;
+}

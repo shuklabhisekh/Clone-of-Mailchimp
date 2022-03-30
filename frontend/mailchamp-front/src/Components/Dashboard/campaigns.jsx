@@ -1,5 +1,6 @@
 import "./campaigns.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 export const Campaign = () => {
   const [ctoggle, csettoggle] = useState(false);
   const [ctoggle1, csettoggle1] = useState(false);
@@ -104,7 +105,9 @@ export const Campaign = () => {
                 <i>Design the content for your email.</i>
               </p>
             </div>
-            <button>Design Email</button>
+            <button>
+              <Link to="/dashboard/builder">Design Email</Link>
+            </button>
           </div>
           <div className="sub-camp--div" style={{ textAlign: "center" }}>
             <img
