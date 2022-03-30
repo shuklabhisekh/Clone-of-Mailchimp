@@ -72,6 +72,11 @@ export default function SignInSide() {
         },
       });
       let data = await responce.json();
+      if (data.message) {
+        alert(data.message);
+      } else {
+        alert("Login succesful");
+      }
       console.log("data send to mongo", data);
     }
   };
