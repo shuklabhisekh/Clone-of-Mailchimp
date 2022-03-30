@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-import { Homepage } from './component/HomePage/Homepage'
+import { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Homepage } from "./component/HomePage/Homepage";
+import { AllRouter } from "./component/Router/AllRouter";
+import { Navbar } from "./component/HomePage/Navbar";
+import SignInSide from "./component/Signup/Signup";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <Homepage/>
-    
+      <SignInSide />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
