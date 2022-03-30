@@ -1,0 +1,67 @@
+
+.whiteLogin{
+    /* margin-right: 20px; */
+    overflow: hidden;
+    
+}
+.whiteLogin>div{
+    width: 100%;
+}
+.email{
+    outline-color: cyan;
+}
+
+.forgotPasswordUsername{
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+    color: rgb(0,124,137);
+    margin: auto;
+    margin-top: 20px ;
+
+}
+.forgotPasswordUsername>a,#createAcount{
+    color: rgb(0,124,137);
+    text-decoration: underline;
+    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+
+
+#copyright{
+    margin-top: 65px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size:12px;
+   
+}
+
+#username{
+    font-weight:600;
+    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    margin-left: -350px;
+    margin-bottom: -10px;
+}
+#needMailchimp{
+    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    margin: 14px 0px;
+    margin-left: -95px;
+
+}
+
+#loginTitle{
+font-weight: 500;
+font-size: 44px;
+margin-left: -320px;
+margin-top: 0px;
+}
+
+#logo{
+    height: 40px;
+
+}
+
+#loginButton{
+    height: 50px;
+}

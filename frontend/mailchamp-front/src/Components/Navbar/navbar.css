@@ -53,6 +53,10 @@
   background-color: #007c89;
   color: #fff;
 }
+.signup a {
+  color: #fff;
+  text-decoration: none;
+}
 
 .navbar--center {
   display: flex;

@@ -1,3 +1,8 @@
 body {
   margin: 0;
 }
+
+a {
+  color: #241c15;
+  text-decoration: none;
+}

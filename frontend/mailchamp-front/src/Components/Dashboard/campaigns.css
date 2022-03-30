@@ -1,0 +1,38 @@
+.campaign-container {
+  margin-left: -25px;
+  margin-right: -25px;
+  font-family: "Graphik Web Regular";
+  color: #241c15;
+}
+.campaign-div {
+  border: 1px solid black;
+}
+
+.campaign-div > div > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #efeeea;
+}
+
+.campaign-div > div h4 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+
+.campaign-div > div button {
+  color: #ffffff;
+  background-color: #716b67;
+  border: none;
+  padding: 10px 18px;
+  transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+}
+
+.sub-camp--div {
+  margin: auto;
+  width: 50%;
+}

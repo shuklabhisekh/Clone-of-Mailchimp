@@ -5,6 +5,7 @@ import search from "../../imges/search.svg";
 import web from "../../imges/web.svg";
 import right_cart from "../../imges/caretRight.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 function Navbar() {
   const [Navbar, setNavbar] = useState(false);
@@ -322,7 +323,9 @@ function Navbar() {
               <img src={search} alt="" width="20px" height="20px" />
             </li>
             <li className="login">Log In</li>
-            <li className="signup">Sign Up Free</li>
+            <li className="signup">
+              <Link to="/signup">Sign Up Free</Link>
+            </li>
           </ul>
         </div>
       </nav>
