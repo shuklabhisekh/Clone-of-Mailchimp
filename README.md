@@ -7,15 +7,19 @@ Mailchimp is an all-in-one Marketing Platform for small business. Which empower 
 ## Tech Stacks Used
 - React
 - Redux
-
+- Mongodb
+- NodeJs
+- Material UI
+- Bootstrap
+<!-- 
 ## Functionality of the Project
 1. Landing Page.
 2. User Sign Up.
 3. User Sign In.
 4. Interactive user Dashboard.
-5. Email Design page.
+5. Email Design page. -->
 
-## Glimps Of my project
+<!-- ## Glimps Of my project
 
 1. Landing Page
 
@@ -36,3 +40,4 @@ Mailchimp is an all-in-one Marketing Platform for small business. Which empower 
 5. Email Design Page
 
 <img src="./readme images/img5.jpg"/>
+ -->
