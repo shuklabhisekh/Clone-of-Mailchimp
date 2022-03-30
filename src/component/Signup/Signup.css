@@ -1,1 +1,52 @@
 
+#smallbox0{
+    border: 2px solid red;
+    height: 730px;
+    font-family:
+    "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+   
+}
+#smallbox1{
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(255,224,27);
+    background-image: url("https://login.mailchimp.com/release/1.1.1cf6f186fff809e72c1926a6889fdf8a84b938d52/images/brand_assets/illos/art-hero-flowers.png");
+}
+#smallbox2{
+    height: 100%;
+    border: 3px solid maroon;
+    width: 78%;
+    background-color: white;
+   
+}
+#logo{
+    height:40px;
+    margin-right: 580px;
+    margin-top: 10px;
+}
+#smallbox3{
+    border: 2px solid pink;
+    width: 65%;
+    margin: auto;
+    text-align: left;
+}
+#welcome{
+    line-height:
+35.2px;
+vertical-align:
+baseline;
+letter-spacing:
+normal;
+word-spacing:
+0px;
+font-size: 32px;
+font-family:
+"Means Web", Georgia, Times, "Times New Roman", serif
+}
+#create{
+    margin-top: 10px;
+}
+#create>span{
+    color: darkcyan;
+}
