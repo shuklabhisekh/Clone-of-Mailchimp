@@ -1,9 +1,50 @@
+import { useState } from "react";
 import "./Signup.css";
 
-
 export const Signup = () => {
+  const [text, setText] = useState({});
+
+  const { username, password, email } = text;
+  const handleChange = (e) => {
+    console.log(e);
+    const { name, value } = e.target;
+    setText({ ...text, [name]: value });
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(text);
+    Register(text);
+    async function Register(e) {
+      try {
+        //   console.log("inside")
+        //    e.preventDefault();
+        var register_data = {
+          //   first_name: document.getElementById("f_name").value,
+          //   last_name: document.getElementById("l_name").value,
+          //   email: document.getElementById("email").value,
+          //   password: document.getElementById("password").value,
+          email: e.email,
+          username: e.username,
+          password: e.password,
+        };
+        console.log(register_data, "registered data");
+        register_data = JSON.stringify(register_data);
+        //  console.log(register_data)
+      } catch (err) {
+        console.log(err);
+      }
+      let reg_api = `http://localhost:3000/register`;
+      let responce = await fetch(reg_api, {
+        method: "POST",
+        body: register_data,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      let data = await responce.json();
+      console.log("data send to mongo", data);
+    }
   };
 
   return (
@@ -28,17 +69,38 @@ export const Signup = () => {
                   Email
                 </label>
                 <br />
-                <input type="text" id="emailInput" required />
+                <input
+                  name="email"
+                  value={email}
+                  type="text"
+                  id="emailInput"
+                  onChange={handleChange}
+                  required
+                />
                 <label id="email" htmlFor="">
                   Username
                 </label>
                 <br />
-                <input type="text" id="emailInput" required />
+                <input
+                  name="username"
+                  value={username}
+                  type="text"
+                  onChange={handleChange}
+                  id="emailInput"
+                  required
+                />
                 <label id="email" htmlFor="">
                   Password
                 </label>
                 <br />
-                <input type="text" id="emailInput" required />
+                <input
+                  name="password"
+                  value={password}
+                  type="text"
+                  onChange={handleChange}
+                  id="emailInput"
+                  required
+                />
                 <br />
                 <input id="checkbox" type="checkbox" name="" />
                 <label id="spamMail" htmlFor="">
