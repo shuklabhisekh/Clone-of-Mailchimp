@@ -2,7 +2,7 @@
 
 
 ## About Mailchimp
-Mailchimp is an all-in-one Marketing Platform for small business. Which empower millions of customers around the world to start and grow their businesses with our smart marketing technology, award-winning support, and inspiring content, Mailchimp is 100% founder-owned and highly profitable. Mailchimp was designed as an alternative to the oversized, expensive email software
+Mailchimp is an all-in-one Marketing Platform for small business. Which empower millions of customers around the world to start and grow their businesses with our smart marketing technology, award-winning support, and inspiring content, Mailchimp is 100% founder-owned and highly profitable. Mailchimp was designed as an alternative to the oversized, expensive email software.
 
 ## Tech Stacks Used
 - React
@@ -11,13 +11,13 @@ Mailchimp is an all-in-one Marketing Platform for small business. Which empower 
 - NodeJs
 - Material UI
 - Bootstrap
-<!-- 
-## Functionality of the Project
-1. Landing Page.
-2. User Sign Up.
-3. User Sign In.
-4. Interactive user Dashboard.
-5. Email Design page. -->
+
+## Major Functionality
+<!-- 1.  -->
+- Hassle-Free Campaign Designing and Launching :
+
+No HTML, CSS, JavaScript, or PHP expertise is needed to create customized email campaigns on Mailchimp. Mailchimp features an easy-to-use WYSIWYG web builder that lets you develop your campaigns from the front end without needing any coding knowledge.You can choose from a list of features and basic readymade layouts for different email campaigns. Besides the layout of your choice, you can also use a range of themes for your emails without needing any backend designing (coding).
+<!-- 2. Create custom Email Template -->
 
 <!-- ## Glimps Of my project
 
