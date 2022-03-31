@@ -11,13 +11,21 @@ Mailchimp is a marketing automation platform designed and developed for business
 - NodeJs
 - Material UI
 - Bootstrap
+- NodeMailer
 
 ## Major Functionality
 <!-- 1.  -->
-### Hassle-Free Campaign Designing and Launching :
+### Hassle-Free Template Designing and Launching :
 
-No HTML, CSS, JavaScript, or PHP expertise is needed to create customized email campaigns on Mailchimp. Mailchimp features an easy-to-use WYSIWYG web builder that lets you develop your campaigns from the front end without needing any coding knowledge.You can choose from a list of features and basic readymade layouts for different email campaigns. Besides the layout of your choice, you can also use a range of themes for your emails without needing any backend designing (coding).
-<!-- 2. Create custom Email Template -->
+No HTML, CSS, JavaScript, or PHP expertise is needed to create customized email campaigns.You can choose from a list of features and basic readymade layouts for different email campaigns. Besides the layout of your choice, you can also use a range of themes for your emails without needing any backend designing (coding).
+
+### Campaigns :
+
+Send a campaign to your entire list, or target people based on available list data such as geolocation or their open/click history.
+
+### Import  Subscribers :
+User can manually upload a copy & paste contacts from an .xls file and can add subscriber.
+
 
 <!-- ## Glimps Of my project
 
