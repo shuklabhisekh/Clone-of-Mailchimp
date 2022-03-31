@@ -41,3 +41,42 @@ No HTML, CSS, JavaScript, or PHP expertise is needed to create customized email 
 
 <img src="./readme images/img5.jpg"/>
  -->
+
+## Credits 
+
+<b>Abhishek Shukla</b>
+
+- <a href="https://github.com/shuklabhisekh" target="_blank">Github</a>
+
+- <a href="https://www.linkedin.com/in/shuklabhisekh/" target="_blank">Linkedin</a>
+
+<b>Akshay Jagtap</b>
+
+- <a href="https://github.com/akshayjagtap1111" target="_blank">Github</a>
+
+-  <a href="https://www.linkedin.com/in/akshay-jagtap-7ab17b213/" target="_blank">Linkedin</a>
+
+<b>Faruk Khan</b>
+
+- <a href="https://github.com/farukkhann" target="_blank">Github</a>
+
+- <a href="https://www.linkedin.com/in/faruk-khan-webdeveloper/" target="_blank">Linkedin</a>
+
+
+
+<b>Shilpa Shingnapure</b>
+
+- <a href="https://github.com/shilpashingnapure" target="_blank">Github</a>
+
+- <a href="https://www.linkedin.com/in/shilpa-shingnapure-134b4320a/" target="_blank">Linkedin</a>
+
+<b>Vikas Gupta</b>
+
+- <a href="https://github.com/Noddy952001" target="_blank">Github</a>
+
+- <a href="https://www.linkedin.com/in/vikas-gupta-1493651b5/" target="_blank">Linkedin</a>
+
+<!-- ### <u>You can read more about our project on our blog : <a href="https://shuklabhisekh.medium.com/clone-of-theory-com-including-frontend-backend-6db940b42d23" target="_blank">Clone of Theory.com</a> </u> -->
+
+# Thank You :sparkling_heart:
+
