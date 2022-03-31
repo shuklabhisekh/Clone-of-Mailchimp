@@ -14,7 +14,7 @@ Mailchimp is an all-in-one Marketing Platform for small business. Which empower 
 
 ## Major Functionality
 <!-- 1.  -->
-- Hassle-Free Campaign Designing and Launching :
+### Hassle-Free Campaign Designing and Launching :
 
 No HTML, CSS, JavaScript, or PHP expertise is needed to create customized email campaigns on Mailchimp. Mailchimp features an easy-to-use WYSIWYG web builder that lets you develop your campaigns from the front end without needing any coding knowledge.You can choose from a list of features and basic readymade layouts for different email campaigns. Besides the layout of your choice, you can also use a range of themes for your emails without needing any backend designing (coding).
 <!-- 2. Create custom Email Template -->
