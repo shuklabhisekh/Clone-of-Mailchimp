@@ -16,12 +16,14 @@ export const Steps = ({ toggle, getRoute }) => {
                 Choose a pre-designed template or use our drag-and-drop builder
                 to launch a campaign in minutes.
               </p>
-              <button
-                className="card-btn card-teal"
-                onClick={() => getRoute("campaigns")}
-              >
-                Create Email
-              </button>
+              <Link to="/dashboard/campaigns">
+                <button
+                  className="card-btn card-teal"
+                  // onClick={() => getRoute("campaigns")}
+                >
+                  Create Email
+                </button>
+              </Link>
             </div>
             <div className="card">
               <img src="https://us14.admin.mailchimp.com/images/app-homepage/onboarding-checklist/automation-img.svg" />

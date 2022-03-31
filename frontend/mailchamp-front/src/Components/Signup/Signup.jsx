@@ -1,12 +1,11 @@
 import { useState } from "react";
 import "./Signup.css";
-
+import axios from "axios";
 export const Signup = () => {
   const [text, setText] = useState({});
 
   const { username, password, email } = text;
   const handleChange = (e) => {
-    console.log(e);
     const { name, value } = e.target;
     setText({ ...text, [name]: value });
   };
@@ -28,13 +27,22 @@ export const Signup = () => {
           username: e.username,
           password: e.password,
         };
-        console.log(register_data, "registered data");
+        // console.log(register_data, "registered data");
+        axios
+          .post("http://localhost:3001/mails/sendverification", register_data)
+          .then((res) => {
+            console.log("this is email data");
+          })
+          .catch((err) => {
+            console.log(err);
+          });
         register_data = JSON.stringify(register_data);
         //  console.log(register_data)
       } catch (err) {
         console.log(err);
       }
-      let reg_api = `http://localhost:3000/register`;
+
+      let reg_api = `http://localhost:3001/register`;
       let responce = await fetch(reg_api, {
         method: "POST",
         body: register_data,

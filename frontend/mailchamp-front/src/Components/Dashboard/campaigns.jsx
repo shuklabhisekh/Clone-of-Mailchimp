@@ -106,7 +106,7 @@ export const Campaign = () => {
               </p>
             </div>
             <button>
-              <Link to="/dashboard/builder">Design Email</Link>
+              <Link to="/dashboard/templates">Design Email</Link>
             </button>
           </div>
           <div className="sub-camp--div" style={{ textAlign: "center" }}>

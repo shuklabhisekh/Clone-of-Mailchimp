@@ -63,7 +63,7 @@ export default function SignInSide() {
       } catch (err) {
         console.log(err);
       }
-      let reg_api = `http://localhost:3000/login`;
+      let reg_api = `http://localhost:3001/login`;
       let responce = await fetch(reg_api, {
         method: "POST",
         body: register_data,
@@ -83,30 +83,14 @@ export default function SignInSide() {
         className="whiteLogin"
         component="main"
         sx={{ height: "100vh" }}
+        style={{ borderLeft: "8px solid yellow" }}
       >
         <CssBaseline />
-        <Grid
-          item
-          xs={false}
-          sm={4}
-          md={7}
-          sx={{
-            backgroundImage:
-              "url(https://cdn-images.mailchimp.com/billboards/phpza0iJx.jpeg)",
-            backgroundRepeat: "no-repeat",
-            backgroundColor: (t) =>
-              t.palette.mode === "light"
-                ? t.palette.grey[50]
-                : t.palette.grey[900],
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+        <Grid item xs={12} sm={8} md={4} component={Paper} elevation={6} square>
           <Box
             sx={{
-              my: 4,
-              mx: 8,
+              // my: 4,
+              // mx: 8,
               display: "flex",
               flexDirection: "column",
               //   alignItems: "center",
@@ -169,14 +153,14 @@ export default function SignInSide() {
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
-                style={{ backgroundColor: "rgb(0,124,137)" }}
+                style={{ backgroundColor: "#007c89" }}
                 id="loginButton"
               >
                 Log In
               </Button>
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
-                style={{ color: "rgb(0,124,137)" }}
+                style={{ textAlign: "center", display: "block" }}
                 label="Keep me logged in"
               />
               <Grid container>
@@ -189,6 +173,23 @@ export default function SignInSide() {
             </Box>
           </Box>
         </Grid>
+        <Grid
+          item
+          xs={false}
+          sm={4}
+          md={8}
+          sx={{
+            backgroundImage:
+              "url(https://cdn-images.mailchimp.com/billboards/phpza0iJx.jpeg)",
+            backgroundRepeat: "no-repeat",
+            backgroundColor: (t) =>
+              t.palette.mode === "light"
+                ? t.palette.grey[50]
+                : t.palette.grey[900],
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
       </Grid>
     </ThemeProvider>
   );

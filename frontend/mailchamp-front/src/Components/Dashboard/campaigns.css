@@ -46,6 +46,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 25px;
+  position: sticky;
+  top: 0;
 }
 
 .Builder-nav > div {
@@ -59,7 +61,7 @@
   font-size: 14px;
 }
 
-.Builder-nav > button {
+.Builder-nav button {
   padding: 12px 18px;
   background-color: teal;
   color: #fff;
