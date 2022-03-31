@@ -2,7 +2,7 @@
 
 
 ## About Mailchimp
-Mailchimp is an all-in-one Marketing Platform for small business. Which empower millions of customers around the world to start and grow their businesses with our smart marketing technology, award-winning support, and inspiring content, Mailchimp is 100% founder-owned and highly profitable. Mailchimp was designed as an alternative to the oversized, expensive email software.
+Mailchimp is a marketing automation platform designed and developed for businesses using email to reach out to their target markets.It is an all-in-one tool where you can manage your mailing lists, create custom email templates, and nurture and automate your entire marketing campaigns. Enterprises looking to leverage email marketing need a tool, such as Mailchimp, to run their campaigns like a well-oiled machine.
 
 ## Tech Stacks Used
 - React
