@@ -2,26 +2,93 @@
     background-color: #ffe01b;
     --typeface-brand: "Means Web",Georgia,Times,"Times New Roman",serif;
     --typeface-base: "Graphik Web","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
-   
 }
 #contact1{
-    margin-left: 8px;
+    /* margin-left: 8px; */
     background-color: white; 
     border-left: 1px solid rgba(36,28,21,0.15);
+    border-bottom: 1px solid white;
+    border-left: 8px solid #ffe01b;
+    
 }
-#contactNav{
-    height: 70px;
-    border-bottom: 1px solid rgba(36,28,21,0.15);;
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+#contactNav{
+    /* background-color: white; */
+    height: 70px;
+    border-bottom: 1px solid rgba(36,28,21,0.15);
+    display: flex;
+    justify-content: space-between;
+    padding:0px 15px;
+    /* margin-top: -20px; */
+    /* position: fixed; */
+    /* margin-top: -100px; */
+}
+
+#leftPart{
+    border: 2px solid transparent;
+    /* display:flex; */
+    /* justify-content: left; */
+    width: 250px;
+}
+#exit>button{
+    font-size: 14px;
+    height: 40px;
+    width: 85px;
+    background-color: white;
+    border: 1px solid darkcyan;
+    color: darkcyan;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 60px;
+    /* font-weight: 600; */
+}
+#exit>button:hover{
+    color: white;
+    background-color: rgb(229,242,243);
+    border: none;
+}
+#importContact{
+    margin-top: -40px;
+    font-size: 20px;
+    margin-left: 40px;
+    font-family: "Means Web",Georgia,Times,"Times New Roman",serif;
+}
+#chooseMethod{
+    font-size: 14px;
+    font-weight: 600;
+    /* width: 200px; */
+}
+#border{
+    border-bottom: 2px solid darkcyan;
+    width: 100px;
+    margin-left: 75px;
+}
+#arrow{
+    height: 0px;
+    /* margin-top: 300px; */
+    color:black;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-left: -20px;
+}
+#logo>img{
+    margin-left: 10px ;
+    height: 40px;
+    cursor: pointer;
 }
 #contact2{
-    border: 2px solid red;
     width: 63%;
     margin-top: 80px;
     margin-left: 220px;
 }
 #contact21{
-    border: 2px solid green ;
     font-family: "Means Web",Georgia,Times,"Times New Roman",serif;
     font-size: 50px;
     font-weight: 500;
@@ -41,7 +108,7 @@ letter-spacing:
 normal;
 word-spacing:
 0px;
-margin-top: 30px;
+margin-top: 25px;
 text-align: left;
 }
 #contact22>a{
@@ -112,7 +179,7 @@ rgba(36, 28, 21, 0.65);
     color: darkcyan;
 }
 
-button{
+#button{
     display: flex;
     justify-content: flex-start;
     font-size: 14px;
@@ -126,8 +193,29 @@ button{
     background-color: darkcyan;
     border: none;
     margin-bottom: 30px;
+    cursor: pointer;
 }
+ 
+#button:hover{
+    background-color: #004e56;;
+}
+#questionMark{
+    border: 2px solid rgb(36,28,21);
+    width: 28px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(36,28,21);
+    border-radius: 50%;
+    position: fixed;
+    margin-left: 1080px;
+    margin-top: -20px;
+    cursor: pointer;
 
+}
+#questionMark:hover{
+    background-color: darkcyan;
+    border: 2px solid darkcyan;
+}
 
 
 
