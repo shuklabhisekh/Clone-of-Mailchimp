@@ -13,8 +13,14 @@ font-weight: 600;
 display: flex;
 justify-content: space-between;
  }
+ #selectaPlan{
+     margin-top: 20px;
+ }
  #x{
-     border:  3px solid red;
+    margin-top: 20px;
+     color: black;
+     margin-right: 10px;
+     cursor: pointer;
  }
  #selectionSmall{
      border: 2px solid cyan;
@@ -25,6 +31,11 @@ justify-content: space-between;
      font-size: 14px;
      font-family: "Means Web",Georgia,Times,"Times New Roman",serif;
 
+ }
+ #ArrowForwardIosIcon{
+     height: 12px;
+     font-weight: 600;
+     margin-top: 3px;
  }
 
  #selectionSmall>div{
@@ -50,11 +61,11 @@ justify-content: space-between;
     font-size: 14px;
     color: white;
     /* border-radius: 2px; */
-    margin-left: 200px;
+    margin-left:198px;
 }
 
 #PriceSummary{
-    border: 2px solid maroon;
+    /* border: 2px solid maroon; */
     display: grid;
     grid-template-columns: 69% 28%;
     justify-content: space-between;
@@ -80,14 +91,15 @@ justify-content: space-between;
  height: 100%;
 }
 #premiumInput{
+    /* border: 1px solid red; */
+
     display: flex;
     justify-content: space-between;
-    margin: 20px 5px;
+    margin: 20px 10px;
     font-size: 28px;
     font-family: "Means Web",Georgia,Times,"Times New Roman",serif;;
 }
 #premiumInput>div{
-    /* border: 1px solid red; */
     margin-top: -5px;
 }
 #premiumAdvanced{
@@ -160,4 +172,31 @@ text-align: center;
 #tenthousand>span{
     font-family: "Means Web",Georgia,Times,"Times New Roman",serif;;
 
+}
+
+#greyPart{
+    height: 60px;
+    background-color:rgb(239, 238, 234);
+    padding: 20px;
+
+}
+#summaryCard{
+    /* padding-top: 30px; */
+}
+#purchaseSummary{
+    margin-top: -10px;
+    font-size: 26px;
+    text-align: left;
+
+}
+#billedIn{
+    /* border: 1px solid red; */
+    text-align: left;
+}
+#paymentSelectOption{
+    margin-left: 5px;
+    border: none;
+    background-color: transparent;
+    color: darkcyan;
+    font-size: 16px;
 }

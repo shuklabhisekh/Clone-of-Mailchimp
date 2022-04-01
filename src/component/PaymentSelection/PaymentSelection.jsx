@@ -1,18 +1,25 @@
 import "./PaymentSelection.css";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ClearIcon from "@mui/icons-material/Clear";
 export const PaymentSelection = () => {
   return (
     <div id="page">
       <div id="paymentNav">
         <div></div>
-        <div>Select A Plan</div>
-        <div id="x">x{/* <svg data-testid="ClearIcon"></svg> */}</div>
+        <div id="selectaPlan">Select A Plan</div>
+        <div id="x">
+          <ClearIcon />
+        </div>
       </div>
       <div id="selectionSmall">
         <div>Selection</div>
-        <div>i</div>
+        <div>
+          <ArrowForwardIosIcon id="ArrowForwardIosIcon" />
+        </div>
         <div>Payment</div>
-        <div>i</div>
+        <div>
+          <ArrowForwardIosIcon id="ArrowForwardIosIcon" />
+        </div>
         <div>Confirmation</div>
       </div>
       <div id="selectionBox">
@@ -92,7 +99,19 @@ export const PaymentSelection = () => {
               </div>
             </div>
           </div>
-          <div id="summaryCard"></div>
+          <div id="summaryCard">
+            <div id="greyPart">
+              <div id="purchaseSummary">Purchase Summary</div>
+              <div id="billedIn">
+                Billed in
+                <select name="" id="paymentSelectOption">
+                  <option value="">Indian Rupee</option>
+                  <option value="">US Dollars</option>
+                </select>{" "}
+              </div>
+            </div>
+            <div id="otherPart"></div>
+          </div>
         </div>
       </div>
     </div>
