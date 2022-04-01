@@ -25,7 +25,7 @@ No HTML, CSS, JavaScript, or PHP expertise is needed to create customized email 
 Send a campaign to your entire list, or target people based on available list data such as geolocation or their open/click history.
 
 ### Import  Subscribers :
-User can manually upload a copy & paste contacts from an .xls file and can add subscriber.
+User can manually upload a copy & paste contacts and can add them in their subscriber list.
 
 
 <!-- ## Glimps Of my project
