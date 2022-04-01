@@ -37,25 +37,26 @@ justify-content: space-between;
 }
 #selectionBox{
     border: 1px solid green;
-    width: 80%;
+    width: 84%;
     height: 500px;
     margin: auto;
     margin-top: 15px;
 }
 #recommend{
-    width: 180px;
+    width: 190px;
     font-weight: 600;
     padding: 4px;
     background-color: darkcyan;
     font-size: 14px;
     color: white;
-    border-radius: 2px;
+    /* border-radius: 2px; */
+    margin-left: 200px;
 }
 
 #PriceSummary{
     border: 2px solid maroon;
     display: grid;
-    grid-template-columns: 70% 28%;
+    grid-template-columns: 69% 28%;
     justify-content: space-between;
     height: 90%;
 }
@@ -67,12 +68,96 @@ justify-content: space-between;
     border: 1px solid gainsboro;
 }
 #priceCard{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 75%;
     display: grid;
+    font-family: "Graphik Web","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+
     grid-template-columns: repeat(4,25%);
 }
 #priceCard>div{
     border: 1px solid gainsboro;
  height: 100%;
+}
+#premiumInput{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 5px;
+    font-size: 28px;
+    font-family: "Means Web",Georgia,Times,"Times New Roman",serif;;
+}
+#premiumInput>div{
+    /* border: 1px solid red; */
+    margin-top: -5px;
+}
+#premiumAdvanced{
+    text-align: left;
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+    line-height:
+20px;
+}
+#PremiumYou{
+    margin-top: 55px;
+    font-size: 14px;
+}
+#PremiumPriceLogo{
+    /* border: 3px solid blueviolet; */
+    display: flex;
+    width: 92%;
+    /* margin: auto; */
+    font-family: "Means Web",Georgia,Times,"Times New Roman",serif;;
+text-align: center;
+/* margin-left: 5px; */
+}
+.PremiumPriceLogo0{
+    margin-left: 10px;
+    /* border: 1px solid cyan; */
+    
+    }
+.PremiumPriceLogo3{
+margin-left: 60px;
+/* border: 1px solid cyan; */
+
+}
+.PremiumPriceLogo2{
+    margin-left: 40px;
+    
+    }
+    .PremiumPriceLogo1{
+        margin-left: 30px;
+        }
+#essential{
+    border: 7px solid darkcyan;
+    border: none;
+
+}
+
+#priceLogo{
+font-size: 28px;
+/* border: 1px solid brown; */
+margin-top: 16px;
+text-align: center;
+}
+#PremiumPriceLogo>div:last-child{
+    font-size: 54px;
+
+}
+#month{
+    font-size: 14px;
+    margin: 20px 0px;
+    font-family: "Means Web",Georgia,Times,"Times New Roman",serif;;
+
+}
+#tenthousand{
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+#tenthousand>span{
+    font-family: "Means Web",Georgia,Times,"Times New Roman",serif;;
+
 }
