@@ -1,18 +1,86 @@
 import "./campaigns.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import axios from "axios";
 export const Campaign = () => {
   const [ctoggle, csettoggle] = useState(false);
   const [ctoggle1, csettoggle1] = useState(false);
+
   const [ctoggle2, csettoggle2] = useState(false);
+
+  //Edit name
   const [name, setname] = useState("Untitled");
   const [newName, setnewName] = useState("");
   const [editname, seteditname] = useState(false);
 
-  const [char, setchar] = useState(100);
+  //To send div inputs
   const [fromname, setfromname] = useState("");
+  const [saveFrom, setsaveFrom] = useState(false);
+
+  //Subject inputs
+  const [subname, setsubname] = useState("");
+  const [prevtext, setprevtext] = useState("");
+  const [saveFrom1, setsaveFrom1] = useState(false);
+  const [send, setsend] = useState(false);
+  if (saveFrom == true) {
+    localStorage.setItem("fromname", fromname);
+  }
+  if (saveFrom1 == true) {
+    localStorage.setItem("subject", JSON.stringify([subname, prevtext]));
+  }
+
+  const [contacts, setcontacts] = useState([]);
+  const [html, sethtml] = useState(null);
+  const [fromdata, setfromdata] = useState(null);
+  const [subject, setsubject] = useState(null);
+
+  useEffect(() => {
+    const contacts = localStorage.getItem("contact") || [];
+    setcontacts(contacts);
+    const html = localStorage.getItem("html");
+    sethtml(html);
+
+    const fromdata = localStorage.getItem("fromname");
+    setfromdata(fromdata);
+    const subject = JSON.parse(localStorage.getItem("subject"));
+    setsubject(subject);
+
+    if (contacts != null && fromdata != "" && subject != "" && html != null) {
+      setsend(true);
+    }
+  }, [removeItems]);
+  //GETING DATA
+
+  function storeData() {
+    let [sub, prev] = subject;
+    let data = { contacts, fromdata, sub, prev, html };
+    axios
+      .post("http://localhost:3001/sendmail", {
+        data,
+      })
+      .then((res) => {
+        console.log(res);
+        alert("successfully send emails...");
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("failed to send emails..");
+      });
+    removeItems();
+    // console.log(data);
+  }
+
+  function removeItems() {
+    localStorage.removeItem("contact");
+    localStorage.removeItem("html");
+    localStorage.removeItem("fromname");
+    localStorage.removeItem("subject");
+  }
+
   return (
     <div className="campaign-container">
+      <div className="loading"></div>
       <div className="campaign-nav">
         <div>
           <div className="bg-email"></div>
@@ -26,7 +94,12 @@ export const Campaign = () => {
         <div style={{ display: "flex", alignItems: "center" }}>
           <a className="finish-btn">Finish later</a>
           <button className="grey-btn">Schedule</button>
-          <button className="grey-btn">Send</button>
+          <button
+            className={send ? "active-send-btn" : "grey-btn"}
+            onClick={storeData}
+          >
+            Send
+          </button>
         </div>
       </div>
       <div className="campaign--name">
@@ -64,7 +137,17 @@ export const Campaign = () => {
         <div style={{ borderTop: "none" }}>
           <div>
             <div className="campaign--head">
-              <img src="https://www.svgrepo.com/show/356372/tick-circle.svg" />
+              {contacts.length > 1 ? (
+                <img
+                  src="https://www.svgrepo.com/show/364354/check-circle-fill.svg"
+                  width="25px"
+                  height="25px"
+                  style={{ marginTop: "12px" }}
+                />
+              ) : (
+                <img src="https://www.svgrepo.com/show/356372/tick-circle.svg" />
+              )}
+
               <div>
                 <h4>To</h4>
                 <p>
@@ -73,7 +156,9 @@ export const Campaign = () => {
               </div>
             </div>
             {!ctoggle ? (
-              <button onClick={() => csettoggle(true)}>Add Recipient</button>
+              <button onClick={() => csettoggle(true)}>
+                {contacts.length > 1 ? "Edit" : "Add Recipient"}
+              </button>
             ) : (
               ""
             )}
@@ -121,16 +206,32 @@ export const Campaign = () => {
         <div>
           <div>
             <div className="campaign--head">
-              <img src="https://www.svgrepo.com/show/356372/tick-circle.svg" />
+              {(saveFrom && fromname.length > 1) || fromdata != null ? (
+                <img
+                  src="https://www.svgrepo.com/show/364354/check-circle-fill.svg"
+                  width="25px"
+                  height="25px"
+                  style={{ marginTop: "12px" }}
+                />
+              ) : (
+                <img src="https://www.svgrepo.com/show/356372/tick-circle.svg" />
+              )}
+
               <div>
                 <h4>From</h4>
-                <p>
-                  <i>Who is sending this campaign?</i>
-                </p>
+                {saveFrom ? (
+                  <p>{fromname}</p>
+                ) : (
+                  <p>
+                    <i>Who is sending this campaign?</i>
+                  </p>
+                )}
               </div>
             </div>
             {!ctoggle1 ? (
-              <button onClick={() => csettoggle1(true)}>Add From</button>
+              <button onClick={() => csettoggle1(true)}>
+                {saveFrom || fromdata != null ? "edit Form" : "Add From"}
+              </button>
             ) : (
               ""
             )}
@@ -152,13 +253,12 @@ export const Campaign = () => {
                     className="font-medium"
                   >
                     <span>Name</span>
-                    <span>{char} characters</span>
+                    <span>{100 - fromname.length} characters</span>
                   </div>
                   <input
                     type="text"
                     onChange={(e) => {
                       setfromname(e.target.value);
-                      setchar(char - 1);
                     }}
                   />
                   <p
@@ -176,10 +276,18 @@ export const Campaign = () => {
                   <div style={{ fontWeight: "500" }} className="font-medium">
                     Email
                   </div>
-                  <input type="text" value="shilpa@gmail.com" disabled />
+                  <input type="text" />
                 </div>
               </div>
-              <button className="save-btn">save</button>
+              <button
+                className={fromname.length > 1 ? "" : "save-btn"}
+                onClick={() => {
+                  csettoggle1(false);
+                  setsaveFrom(true);
+                }}
+              >
+                save
+              </button>
               <span className="finish-btn" onClick={() => csettoggle1(false)}>
                 Cancel
               </span>
@@ -191,7 +299,17 @@ export const Campaign = () => {
         <div>
           <div>
             <div className="campaign--head">
-              <img src="https://www.svgrepo.com/show/356372/tick-circle.svg" />
+              {(saveFrom1 && subname.length > 1) || subject != null ? (
+                <img
+                  src="https://www.svgrepo.com/show/364354/check-circle-fill.svg"
+                  width="25px"
+                  height="25px"
+                  style={{ marginTop: "12px" }}
+                />
+              ) : (
+                <img src="https://www.svgrepo.com/show/356372/tick-circle.svg" />
+              )}
+
               <div>
                 <h4>Subject</h4>
                 <p>
@@ -200,7 +318,9 @@ export const Campaign = () => {
               </div>
             </div>
             {!ctoggle2 ? (
-              <button onClick={() => csettoggle2(true)}>Add Subject</button>
+              <button onClick={() => csettoggle2(true)}>
+                {saveFrom1 || subject != null ? "edit Subject" : "Add Subject"}
+              </button>
             ) : (
               ""
             )}
@@ -223,9 +343,14 @@ export const Campaign = () => {
                       className="font-medium"
                     >
                       <span>Subject</span>
-                      <span className="dim-el">150 characters</span>
+                      <span className="dim-el">
+                        {150 - subname.length} characters
+                      </span>
                     </div>
-                    <input type="text" />
+                    <input
+                      type="text"
+                      onChange={(e) => setsubname(e.target.value)}
+                    />
                     <p className="subject-p font-medium">
                       See how your <span>recent subject lines</span> performed.
                       <span>View our subject line guide</span>
@@ -242,15 +367,28 @@ export const Campaign = () => {
                       className="font-medium"
                     >
                       <span>PreviewText</span>
-                      <span className="dim-el">150 characters</span>
+                      <span className="dim-el">
+                        {150 - prevtext.length} characters
+                      </span>
                     </div>
-                    <input type="text" />
+                    <input
+                      type="text"
+                      onChange={(e) => setprevtext(e.target.value)}
+                    />
                     <p className="subject-p font-medium">
                       <span>Preview text</span> appears in the inbox after the
                       subject line.
                     </p>
                   </div>
-                  <button className="save-btn">save</button>
+                  <button
+                    className={subname.length > 1 ? "" : "save-btn"}
+                    onClick={() => {
+                      csettoggle2(false);
+                      setsaveFrom1(true);
+                    }}
+                  >
+                    save
+                  </button>
                   <span
                     className="finish-btn"
                     onClick={() => csettoggle2(false)}
@@ -265,12 +403,60 @@ export const Campaign = () => {
                       your email.
                     </h5>
                     <span>Based on best practice</span>
-                    <ul>
-                      <li>Try to use no more than 9 words</li>
-                      <li>Try to use no more than 1 emoji</li>
-                      <li>Avoid using more than 60 characters</li>
-                      <li>Avoid using more than 3 punctuation marks</li>
-                    </ul>
+                    {subname.length < 1 ? (
+                      <ul className="ul1">
+                        <li>Try to use no more than 9 words</li>
+                        <li>Try to use no more than 1 emoji</li>
+                        <li>Avoid using more than 60 characters</li>
+                        <li>Avoid using more than 3 punctuation marks</li>
+                      </ul>
+                    ) : (
+                      <ul className="ul2">
+                        <li>
+                          <img src="https://www.svgrepo.com/show/356372/tick-circle.svg" />
+                          <div>
+                            <strong>It's short and sweet</strong>
+                            <p>
+                              Subject lines with fewer than 9 words tend to
+                              perform better
+                            </p>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="https://www.svgrepo.com/show/356372/tick-circle.svg" />
+                          <div>
+                            <strong>
+                              Emojis are great... in small quantities
+                            </strong>
+                            <p>
+                              Subject lines with fewer than 9 words tend to
+                              perform better
+                            </p>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="https://www.svgrepo.com/show/356372/tick-circle.svg" />
+                          <div>
+                            <strong>It's short and sweet</strong>
+                            <p>
+                              Subject lines with fewer than 9 words tend to
+                              perform better
+                            </p>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="https://www.svgrepo.com/show/356372/tick-circle.svg" />
+                          <div>
+                            {" "}
+                            <strong>It's short and sweet</strong>
+                            <p>
+                              Subject lines with fewer than 9 words tend to
+                              perform better
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    )}
                   </div>
                 </div>
               </div>
@@ -282,7 +468,17 @@ export const Campaign = () => {
         <div>
           <div style={{ borderBottom: "none" }}>
             <div className="campaign--head">
-              <img src="https://www.svgrepo.com/show/356372/tick-circle.svg" />
+              {html != null ? (
+                <img
+                  src="https://www.svgrepo.com/show/364354/check-circle-fill.svg"
+                  width="25px"
+                  height="25px"
+                  style={{ marginTop: "12px" }}
+                />
+              ) : (
+                <img src="https://www.svgrepo.com/show/356372/tick-circle.svg" />
+              )}
+
               <div>
                 <h4>Content</h4>
                 <p>

@@ -89,7 +89,7 @@ export default function SignInSide() {
         className="whiteLogin"
         component="main"
         sx={{ height: "100vh" }}
-        style={{ borderLeft: "8px solid yellow" }}
+        style={{ borderLeft: "8px solid #ffe01b" }}
       >
         <CssBaseline />
         <Grid item xs={12} sm={8} md={4} component={Paper} elevation={6} square>

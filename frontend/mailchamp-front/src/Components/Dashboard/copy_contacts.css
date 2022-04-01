@@ -1,0 +1,63 @@
+#contact_area {
+  color: rgb(18, 18, 18);
+  overflow: scroll;
+  white-space: pre;
+  transition: outline 0.3s ease-in-out;
+  border-color: gray;
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+}
+#contact_area:focus {
+  outline: solid teal 2px;
+}
+
+#Copy_contacts_cover {
+  margin: auto;
+  font-family: "Graphik Web Regular", serif;
+
+  width: 65%;
+  margin-top: 100px;
+}
+
+#Copy_contacts_cover p:nth-child(1) {
+  font-size: 48px;
+  font-weight: 100;
+  margin: 0;
+  margin-top: 50px;
+  font-family: "Means Web";
+}
+
+#Copy_contacts_cover p:nth-child(2) {
+  font-size: 13px;
+  line-height: 25px;
+}
+
+#Copy_contacts_cover p:nth-child(3) {
+  margin-top: 50px;
+}
+#Copy_contacts_cover a {
+  color: #007c89;
+  text-decoration: underline;
+  font-weight: 500;
+  font-family: "Graphik Web Medium";
+}
+
+#contact_con_btn {
+  background-color: #007c89;
+  border-radius: 0px;
+  border: none;
+  padding: 15px 12px 15px 12px;
+  color: white;
+  margin-top: 20px;
+  width: 200px;
+  font-weight: 300;
+}
+
+#contact_con_btn a {
+  color: #fff;
+  text-decoration: none;
+}
+#contact_con_btn:hover {
+  background-color: #004e56;
+}

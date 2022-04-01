@@ -18,8 +18,15 @@ oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
 const sendMails = async (req, res) => {
   try {
     console.log("geting mail from react", req.body);
-    let data = JSON.parse(req.body.data);
-    // console.log(a);
+    const { contacts, fromdata, sub, prev, html } = req.body.data;
+
+    let listSenders = [];
+    JSON.parse(contacts).forEach((el) => {
+      listSenders.push(el.email);
+    });
+
+    listSenders = listSenders.join(",");
+
     //SEND MAIL
     const accessToken = await oAuth2Client.getAccessToken();
 
@@ -36,10 +43,10 @@ const sendMails = async (req, res) => {
     });
 
     const mailOptions = {
-      from: "mailchimpclone@gmail.com",
-      to: "vds9828@gmail.com",
-      subject: "testing mail",
-      html: data,
+      from: `Team Mailchimp mailchimpclone@gmail.com`,
+      to: listSenders,
+      subject: sub,
+      html: JSON.parse(html),
     };
 
     const result = await transport.sendMail(mailOptions);

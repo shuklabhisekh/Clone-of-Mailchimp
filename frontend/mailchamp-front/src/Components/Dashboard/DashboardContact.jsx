@@ -108,7 +108,9 @@ export const DashboardPage = () => {
             </div>
           </div>
           <div id="questionMark">?</div>
-          <button id="button">Continue</button>
+          <button id="button">
+            <Link to="/members/importList">Continue</Link>
+          </button>
         </div>
       </div>
     </div>

@@ -12,12 +12,6 @@
   border-left: 8px solid #ffe01b;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 #contactNav {
   /* background-color: white; */
   height: 70px;

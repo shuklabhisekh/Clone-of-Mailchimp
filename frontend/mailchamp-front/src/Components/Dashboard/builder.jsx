@@ -2,10 +2,11 @@ import React, { useRef } from "react";
 import logo from "../../imges/logo.svg";
 import EmailEditor from "react-email-editor";
 import { Link } from "react-router-dom";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import { templatesList } from "./templates";
 import axios from "axios";
 export const Builder = (props) => {
+  const navigate = useNavigate();
   const { id } = useParams();
   let obj = templatesList.find((t) => t.id === id);
   console.log(obj.template);
@@ -21,17 +22,9 @@ export const Builder = (props) => {
   const exportHtml = () => {
     emailEditorRef.current.editor.exportHtml((data) => {
       const { design, html } = data;
-
-      //   axios
-      //     .post("http://localhost:3001/sendmail", {
-      //       data: JSON.stringify(html),
-      //     })
-      //     .then((res) => {
-      //       console.log(res);
-      //     })
-      //     .catch((err) => {
-      //       console.log(err);
-      //     });
+      console.log(html);
+      localStorage.setItem("html", JSON.stringify(html));
+      navigate("/dashboard/campaigns");
     });
   };
 
@@ -60,9 +53,8 @@ export const Builder = (props) => {
         </div>
         <div style={{ display: "flex", gap: "10px" }}>
           <button onClick={saveDesign}>Save Design</button>
-          <Link to="/dashboard/campaigns">
-            <button onClick={exportHtml}>Continue</button>
-          </Link>
+
+          <button onClick={exportHtml}>Continue</button>
         </div>
       </div>
 

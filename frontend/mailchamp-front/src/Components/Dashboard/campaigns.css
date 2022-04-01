@@ -306,3 +306,31 @@
   border-top: none;
   padding-top: 10px;
 }
+
+.ul2 li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px !important;
+}
+
+.ul2 li div {
+  width: 100%;
+}
+
+.ul2 img {
+  filter: invert(29%) sepia(92%) saturate(1225%) hue-rotate(127deg)
+    brightness(103%) contrast(99%);
+}
+.ul2 li strong {
+  color: rgb(36, 28, 21);
+  margin-bottom: 10px;
+}
+
+.active-send-btn {
+  background: teal !important;
+  color: #fff;
+  border: none;
+  padding: 10px 13px;
+  border-radius: 2px;
+}

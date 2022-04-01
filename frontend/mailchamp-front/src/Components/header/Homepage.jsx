@@ -2,7 +2,7 @@ import "./homepage.css";
 export const Homepage = () => {
   return (
     <>
-      <div id="smallbox0">
+      <div id="smallbox0--header">
         <div id="smallbox00">
           <div id="smallbox01">Do it all with Mailchimp</div>
           <div id="smallbox02">
