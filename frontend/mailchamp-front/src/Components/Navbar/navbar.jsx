@@ -322,7 +322,9 @@ function Navbar() {
             <li>
               <img src={search} alt="" width="20px" height="20px" />
             </li>
-            <li className="login">Log In</li>
+            <li className="login">
+              <Link to="/login">Log In</Link>
+            </li>
             <li className="signup">
               <Link to="/signup">Sign Up Free</Link>
             </li>

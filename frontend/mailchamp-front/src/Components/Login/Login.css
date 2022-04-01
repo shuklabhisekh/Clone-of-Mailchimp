@@ -37,6 +37,9 @@
     Verdana, sans-serif;
   cursor: pointer;
 }
+#createAcount > a {
+  color: rgb(0, 124, 137);
+}
 
 #copyright {
   margin-top: 65px;

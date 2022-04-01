@@ -66,6 +66,8 @@ export const Sidemenu = ({ stateToggle, toggle }) => {
       content: ["Manage", "Add new"],
     },
   ];
+
+  let { user_data } = JSON.parse(localStorage.getItem("user"));
   return (
     <div className={toggle ? `sidemenu sidemenu-small` : "sidemenu"}>
       <div>
@@ -97,7 +99,7 @@ export const Sidemenu = ({ stateToggle, toggle }) => {
             height="50px"
           />
           <div>
-            <span>Shilpa</span>
+            <span>{user_data.username}</span>
             <br />
             <span>SSS</span>
           </div>

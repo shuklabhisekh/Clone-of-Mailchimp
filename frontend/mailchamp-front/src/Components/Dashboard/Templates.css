@@ -29,7 +29,7 @@
 }
 
 .templates > div:last-child {
-  padding: 10px 30px;
+  padding: 8px 15px;
 }
 
 .templates--list h2 {
@@ -62,5 +62,5 @@
 
 .template-features {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }

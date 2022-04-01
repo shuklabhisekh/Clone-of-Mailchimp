@@ -30,11 +30,11 @@ const register = async (req, res) => {
   }
 };
 
-const login = async (req,res) => {
+const login = async (req, res) => {
   try {
-    const user_data = await user
-      .findOne({ email: req.body.email })
-     
+    const user_data = await user.findOne({ email: req.body.email });
+
+    console.log("from mongo", user_data);
 
     if (!user_data) {
       return res
@@ -45,7 +45,6 @@ const login = async (req,res) => {
     const match = user_data.checkPassword(req.body.password);
 
     if (!match) {
-
       return res
         .status(400)
         .send({ message: "please check your email or password" });
@@ -53,13 +52,10 @@ const login = async (req,res) => {
 
     const token = newToken(user_data);
 
-    res.send({user_data,token});
-
+    res.send({ user_data, token });
   } catch (e) {
     res.status(400).send(e.message);
   }
 };
-
-
 
 module.exports = { register, login };

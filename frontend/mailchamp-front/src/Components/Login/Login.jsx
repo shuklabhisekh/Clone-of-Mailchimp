@@ -13,6 +13,8 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./Login.css";
+import { useNavigate, Link as Logolink } from "react-router-dom";
+
 function Copyright(props) {
   return (
     <Typography
@@ -36,6 +38,7 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function SignInSide() {
+  const navigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -72,7 +75,10 @@ export default function SignInSide() {
         },
       });
       let data = await responce.json();
-      console.log("data send to mongo", data);
+      localStorage.setItem("user", JSON.stringify(data));
+      navigate("/dashboard");
+
+      // console.log("data send to mongo", data);
     }
   };
 
@@ -98,10 +104,12 @@ export default function SignInSide() {
           >
             <div>
               {" "}
-              <img
-                id="logo"
-                src="https://login.mailchimp.com/release/1.1.1cf6f186fff809e72c1926a6889fdf8a84b938d52/images/brand_assets/logos/mc-freddie-dark.svg"
-              />{" "}
+              <Logolink to="/">
+                <img
+                  id="logo"
+                  src="https://login.mailchimp.com/release/1.1.1cf6f186fff809e72c1926a6889fdf8a84b938d52/images/brand_assets/logos/mc-freddie-dark.svg"
+                />{" "}
+              </Logolink>
             </div>
             <Typography
               component="h1"
@@ -115,7 +123,9 @@ export default function SignInSide() {
             </Typography>
             <div id="needMailchimp">
               Need a Mailchimp account?{" "}
-              <span id="createAcount">Create an account</span>{" "}
+              <span id="createAcount">
+                <Logolink to="/signup">Create an account</Logolink>
+              </span>
             </div>
             <Box
               component="form"

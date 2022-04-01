@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Signup.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 export const Signup = () => {
   const [text, setText] = useState({});
 
@@ -70,7 +71,9 @@ export const Signup = () => {
               <div id="welcome">Welcome to Mailchimp</div>
               <div id="create">
                 Create an account or
-                <span> log in</span>
+                <span>
+                  <Link to="/login">log in</Link>
+                </span>
               </div>
               <form id="form" action="" onSubmit={handleSubmit}>
                 <label id="email" htmlFor="">
@@ -104,7 +107,7 @@ export const Signup = () => {
                 <input
                   name="password"
                   value={password}
-                  type="text"
+                  type="password"
                   onChange={handleChange}
                   id="emailInput"
                   required

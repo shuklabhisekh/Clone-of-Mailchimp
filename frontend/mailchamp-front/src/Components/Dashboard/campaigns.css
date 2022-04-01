@@ -5,7 +5,7 @@
   color: #241c15;
 }
 .campaign-div {
-  border: 1px solid black;
+  border: solid 1px #bdbbb9;
 }
 
 .campaign-div > div > div:first-child {
@@ -13,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
-  border-bottom: 1px solid #efeeea;
+  border-top: 1px solid #efeeea;
 }
 
 .campaign-div > div h4 {
@@ -29,14 +29,58 @@
   background-color: #716b67;
   border: none;
   padding: 10px 18px;
+  font-weight: 500;
+  font-family: "Graphik Web Medium";
+  font-size: 14px;
+  cursor: pointer;
   transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+}
+
+.campaign-div > div button a {
+  color: #fff;
 }
 
 .sub-camp--div {
   margin: auto;
+  width: 80%;
+  padding: 20px 0;
+  font-family: "Graphik Web Regular";
+  padding-bottom: 50px;
+}
+
+.sub-camp--div h1 {
+  font-size: 28px;
+  font-family: "Means Web";
+  line-height: 30.8px;
+  font-weight: 400;
+  margin: 0px 0px 6px;
+}
+.sub-camp--div p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px 0px 12px;
+}
+.dim-el {
+  opacity: 0.8;
+}
+
+.sub-camp--inputs {
+  display: flex;
+  justify-content: space-between;
+}
+.sub-camp--inputs div {
   width: 50%;
 }
 
+.sub-camp--inputs input {
+  width: 93%;
+  padding: 8px 8px;
+  margin: 10px 0;
+}
+
+.font-medium {
+  font-family: "Graphik Web Medium";
+}
 .Builder-nav + div {
   height: 90.5vh;
 }
@@ -68,4 +112,197 @@
   border: none;
   font-family: "Graphik Web Medium";
   border-radius: 2px;
+}
+
+.campaign--head {
+  display: flex;
+  /* align-items: baseline; */
+  gap: 15px;
+}
+
+.campaign--head img {
+  margin-top: -30px;
+  opacity: 0.2;
+}
+
+.campaign-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #efeeea;
+  margin-left: -45px;
+  margin-right: -45px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0 25px;
+  background: #fff;
+}
+
+.campaign-nav > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.campaign-nav > div:first-child p {
+  margin-top: -15px;
+  font-size: 14px;
+}
+.campaign-nav > div:first-child h4 {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Graphik Web Medium";
+}
+
+.campaign-nav > div:first-child h4 span {
+  background-color: #efeeea;
+  padding: 3px 9px;
+  font-size: 14px;
+  color: #241c15;
+  font-weight: 400;
+  margin: 0px 6px;
+  border-radius: 10px;
+  font-family: "Graphik Web Regular";
+}
+.campaign--name {
+  margin: 45px 0;
+}
+.campaign--name h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.grey-btn {
+  border: none;
+  padding: 10px 13px;
+  border: 1px solid #c6bbb9;
+  border-radius: 2px;
+  background: #fff;
+  color: #c6bbb9;
+  cursor: pointer;
+}
+
+.finish-btn {
+  font-size: 14px;
+  color: teal;
+  border-bottom: 1px solid teal;
+  cursor: pointer;
+}
+
+.bg-email {
+  width: 24px;
+  height: 25px;
+  background: url(https://us14.admin.mailchimp.com/release/1.1.1ee4d331280b050b104b54b63464c4d137a4c6e82/images/sprites/channel-icons-v4.svg)
+    no-repeat;
+  background-position: 0 -32px;
+  background-size: 24px 313px;
+}
+
+.editname {
+  font-size: 14px;
+  color: #004e56;
+  cursor: pointer;
+}
+
+.campaign--name input {
+  border: solid 1px #bdbbb9;
+  width: 60%;
+  border-radius: 2px;
+  padding: 10px 8px;
+  margin-bottom: 20px;
+}
+
+.campaign--name button {
+  background-color: #716b67;
+  border: none;
+  padding: 10px 18px;
+  font-weight: 500;
+  font-family: "Graphik Web Medium";
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+  color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.save-btn {
+  border: 1px solid #c6bbb9 !important;
+  color: #c6bbb9 !important;
+  background: transparent !important;
+  margin-right: 8px;
+}
+
+.subject-p {
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: rgba(36, 28, 21, 0.65);
+  margin-bottom: 50px !important;
+}
+
+.subject-p span {
+  color: #004e56;
+}
+
+.subject-card {
+  width: 90% !important;
+  border: solid 1px #dedddc;
+  padding: 30px 12px;
+  margin: 0 20px;
+  font-family: "Graphik Web Regular";
+  position: relative;
+  margin-top: -15px;
+}
+
+.subject-card:before {
+  content: "";
+  background: #ffffff;
+  border: solid #dedddc;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  height: 36px;
+  left: -3.5%;
+  position: absolute;
+  top: 9%;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  width: 36px;
+  z-index: 0;
+}
+
+.subject-card h5 {
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0px 0px 12px;
+  padding: 0px 0px 0px 35px;
+  font-weight: 400;
+}
+
+.subject-card span {
+  font-size: 14px;
+  line-height: 36px;
+  padding: 10px 18px;
+  border-radius: 20px;
+
+  margin-left: 35px;
+
+  background-color: rgb(255, 224, 27);
+}
+
+.subject-card ul {
+  list-style: none;
+  margin-left: -2px;
+  margin-right: 25px;
+  color: rgba(36, 28, 21, 0.65);
+}
+
+.subject-card ul li {
+  padding: 30px 0;
+  border-top: solid 1px #dedddc;
+}
+
+.subject-card ul li:first-child {
+  border-top: none;
+  padding-top: 10px;
 }
