@@ -41,7 +41,9 @@ export const Steps = ({ toggle, getRoute }) => {
                 Build a free website with all the tools needed to market your
                 business built right in.
               </p>
-              <button className="card-btn">Build Website</button>
+              <Link to="/dashboard/websitebuilder">
+                <button className="card-btn">Build Website</button>
+              </Link>
             </div>
           </div>
           <p>

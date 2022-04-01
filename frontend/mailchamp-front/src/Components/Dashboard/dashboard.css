@@ -103,6 +103,11 @@
   justify-content: space-between;
   color: #241c15;
   font-family: "Graphik Web Regular";
+  cursor: pointer;
+}
+
+.card button {
+  cursor: pointer;
 }
 
 .card-contact.card {

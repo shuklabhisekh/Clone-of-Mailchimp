@@ -4,8 +4,8 @@ import Accordion from "./Accordion";
 import create from "../../imges/sidemenu-icon/create.svg";
 import search from "../../imges/sidemenu-icon/search.svg";
 import logo from "../../imges/logo.svg";
-
-export const Sidemenu = ({ stateToggle, toggle }) => {
+import star from "../../imges/star.svg";
+export const Sidemenu = ({ stateToggle, toggle, getProfile }) => {
   const accordionData = [
     {
       title: "Audience",
@@ -90,18 +90,39 @@ export const Sidemenu = ({ stateToggle, toggle }) => {
         </div>
       </div>
       <div className="profile">
+        <img src={star} className={toggle ? "hoverimg" : "imghide"} />
         <button>Upgrade</button>
-        <div>
-          <img
-            src="https://www.seekpng.com/png/detail/110-1100707_person-avatar-placeholder.png"
-            alt=""
-            width="50px"
-            height="50px"
-          />
+
+        <div className={toggle ? "showname" : ""}>
+          <div
+            className={
+              toggle ? "profileName dashboard-profile" : "dashboard-profile"
+            }
+            onClick={() => getProfile(user_data.username)}
+          >
+            {user_data.username.charAt(0)}
+          </div>
+
           <div>
-            <span>{user_data.username}</span>
-            <br />
-            <span>SSS</span>
+            <span
+              style={{
+                fontWeight: "500",
+                fontFamily: "Graphik Web Medium",
+                fontSize: "13px",
+              }}
+            >
+              {user_data.username}
+            </span>
+
+            <span
+              style={{
+                fontSize: "10px",
+                display: "block",
+                marginTop: "3px",
+              }}
+            >
+              SSS
+            </span>
           </div>
         </div>
       </div>

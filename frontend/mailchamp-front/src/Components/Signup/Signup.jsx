@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./Signup.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export const Signup = () => {
+  const navigate = useNavigate();
   const [text, setText] = useState({});
 
   const { username, password, email } = text;
@@ -53,6 +54,7 @@ export const Signup = () => {
       });
       let data = await responce.json();
       console.log("data send to mongo", data);
+      navigate("/activationemail");
     }
   };
 
@@ -62,11 +64,13 @@ export const Signup = () => {
         <div id="smallbox2">
           <div>
             {" "}
-            <img
-              id="logo"
-              src="https://login.mailchimp.com/release/1.1.1cf6f186fff809e72c1926a6889fdf8a84b938d52/images/brand_assets/logos/mc-freddie-dark.svg"
-              alt=""
-            />
+            <Link to="/">
+              <img
+                id="logo"
+                src="https://login.mailchimp.com/release/1.1.1cf6f186fff809e72c1926a6889fdf8a84b938d52/images/brand_assets/logos/mc-freddie-dark.svg"
+                alt=""
+              />
+            </Link>
             <div id="smallbox3">
               <div id="welcome">Welcome to Mailchimp</div>
               <div id="create">
@@ -129,7 +133,12 @@ export const Signup = () => {
                 <br />
                 <br />
                 <br />
-                <input type="submit" value="Sign Up" name="" id="button" />
+                <input
+                  type="submit"
+                  value="Sign Up"
+                  name=""
+                  id="button-signup"
+                />
               </form>
             </div>
             <div id="credit">

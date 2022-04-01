@@ -1,6 +1,7 @@
 import "./header.css";
 import headerImg from "../../imges/header.webp";
 import { Homepage } from "./Homepage";
+import { FooterUp } from "./footerUp";
 import Navbar from "../Navbar/navbar";
 function Header() {
   return (
@@ -24,6 +25,7 @@ function Header() {
         </div>
       </div>
       <Homepage />
+      <FooterUp />
     </div>
   );
 }

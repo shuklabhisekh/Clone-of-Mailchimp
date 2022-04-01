@@ -499,6 +499,85 @@ export const Campaign = () => {
           </div>
         </div>
       </div>
+
+      <div className="connect-social">
+        <h3>Share Your Campaign</h3>
+        <h4>Campaign Link</h4>
+        <p>
+          https://mailchi.mp/[xxxxxx]/[xxxxxx] <span>Edit</span>
+        </p>
+        <p>
+          Want to brand your campaign link? Click edit to create a custom URL.
+        </p>
+        <h3>Add A Social Post To Your Campaign</h3>
+        <div>
+          <img
+            src="https://us14.admin.mailchimp.com/images/icons/facebook.svg"
+            width="35px"
+            height="35px"
+            alt="Facebook"
+          />
+          <div>
+            <h4 className="mt">Facebook</h4>
+            <p className="color">Connect Facebook</p>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="https://us14.admin.mailchimp.com/images/icons/svg/twitter.svg"
+            width="35px"
+            height="30px"
+            alt="Twitter"
+          />
+          <div>
+            <h4 className="mt">Twitter</h4>
+            <p className="color">Connect Twitter</p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://us14.admin.mailchimp.com/images/icons/ig_2x36.png"
+            width="35px"
+            height="35px"
+            alt="instgram"
+          />
+          <div>
+            <h4 className="mt">Instagram</h4>
+            <p>
+              Add an Instagram post to your campaign by connecting your
+              <br />
+              <span className="color">Instagram business profile</span> to your
+              Facebook page.
+            </p>
+            <p className="color">Connect Instagram</p>
+          </div>
+        </div>
+        <div>
+          <h4>Settings & Tracking Edit</h4>
+          <ul>
+            <li>
+              You're <strong>not using Inbox</strong> to manage replies.
+            </li>
+            <li>
+              Your <strong>embedded videos will not auto-convert </strong>into
+              linked thumbnail images.
+            </li>
+            <li>
+              You're <strong>tracking opens.</strong>
+            </li>
+            <li>
+              You're <strong>tracking clicks.</strong>
+            </li>
+            <li>
+              You're <strong>not tracking plain-text clicks.</strong>
+            </li>
+            <li>
+              You're <strong>not tracking e-commerce link activity.</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

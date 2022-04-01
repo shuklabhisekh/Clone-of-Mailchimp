@@ -9,6 +9,7 @@ import { Campaigntemplate } from "./Components/Dashboard/campaignsTemplates";
 import { DashboardPage } from "./Components/Dashboard/DashboardContact";
 import { CopyContacts } from "./Components/Dashboard/copy_contacts";
 import { WebBuilder } from "./Components/Dashboard/websitebuilder";
+import { ActivationPage } from "./Components/Signup/activationPage";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboard/:pages" element={<Dashboard />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/activationemail" element={<ActivationPage />} />
         <Route path="/login" element={<SignInSide />} />
         <Route path="/dashboard/templates" element={<Campaigntemplate />} />
         <Route path="/dashboard/builder/:id" element={<Builder />} />

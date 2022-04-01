@@ -66,17 +66,22 @@ export default function SignInSide() {
       } catch (err) {
         console.log(err);
       }
-      let reg_api = `http://localhost:3001/login`;
-      let responce = await fetch(reg_api, {
-        method: "POST",
-        body: register_data,
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      let data = await responce.json();
-      localStorage.setItem("user", JSON.stringify(data));
-      navigate("/dashboard");
+      try {
+        let reg_api = `http://localhost:3001/login`;
+        let responce = await fetch(reg_api, {
+          method: "POST",
+          body: register_data,
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        let data = await responce.json();
+        localStorage.setItem("user", JSON.stringify(data));
+        navigate("/dashboard");
+      } catch (err) {
+        alert("error please try again");
+        navigate("/login");
+      }
 
       // console.log("data send to mongo", data);
     }
