@@ -1,0 +1,302 @@
+@font-face{
+    font-family: "means-web";
+    src: url(../font/Means-Light-Web.7121f5d6.woff2);
+}
+@font-face{
+    font-family: "graphik-regular";
+    src: url(../font/Graphik-Regular-Web.11b60cc4.woff2);
+}
+@font-face {
+    font-family: "graphik-medium";
+    src: url(../font/Graphik-Medium-Web.dcadfa4d.woff2);
+}
+
+.outer{
+    align-items: center;
+    /* text-align: center; */
+
+  
+}
+.reso{
+    width: 60%;
+    margin:auto;
+    padding:40px;
+    text-align: center;
+}
+.reso>h1{
+    font-size: 65px;
+    font-family: means-web;
+    font-weight: 500;
+    margin-bottom: 4px;
+    
+}
+.reso>p{
+    font-family: graphik-regular;
+    margin-top: 4px;
+    line-height: 30px;
+}
+.ecommerce{
+    display: flex;
+    width: 75%;
+    margin:auto;
+}
+.free{
+    background-color:  #fbcfbd;
+    width: 150%;
+    padding: 10% 10%;
+    height: 600px;
+    text-align: center;
+}
+.free>h1{
+    font-size: 65px;
+    font-family: means-web;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.free>p{
+    font-family:  graphik-regular;
+}
+
+.girl_img{
+    width: 100%;
+    text-align: center;
+}
+.girl_img>div>img{
+ width: 90%;
+}
+.podcast{
+    text-align: left;
+    /* padding: 30px 50px; */
+    margin-left: 22px;
+    width: 380px;
+}
+.podcast>p{
+    font-family:  graphik-regular;
+}
+.podcast>h2{
+    font-family:means-web ;
+}
+/* .logoimage{
+    padding: 0px 30px;
+} */
+.frstImg{
+   
+position: relative;
+text-align: center;
+color: white;
+      
+}
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    text-align: left;
+    
+  }
+  .bottom-left>h2{
+      font-size: 44px;
+      font-family: means-web;
+  }
+  .bottom-left>p{
+    
+    font-family:graphik-medium;
+    font-size: 18px;
+}
+.courier{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 187px;
+    width: 75%;
+}
+.frstImg>img{
+    width: 450px;
+    height: 600px;
+}
+.seconddv{
+    display: flex;
+    background-color:  #fbeeca;
+    margin-left: 10px;
+  
+    
+
+}
+
+.seconddv>div>img{
+    width: 320px;
+    height: 320px;
+    margin-left: 0px;
+    }
+.seconddv>div>h2{
+    font-family: means-web;
+    font-weight: 500;
+    font-size: 40px;
+    
+}
+
+.seconddv>div>p{
+        font-family: graphik-regular;
+        
+}
+.business{
+    padding: 30px;
+    margin-top: 50px;
+}
+#business{
+    font-family: graphik-medium;
+    font-weight: 100;
+}
+#learnmr{
+    font-family: graphik-medium;
+    
+}
+#learnmr2{
+    font-family: graphik-medium;
+    
+}
+
+
+.letsdothis1{
+    
+    background-color:#ffe01b ;
+    text-align: center;
+    padding: 40px;
+    height: 500px;
+    margin-top: 150px;
+
+}
+.letsdothis{
+    margin-top: 150px;
+   
+}
+.letsdothis>h1{
+    font-family: means-web;
+    font-size: 80px;
+    font-weight: 500;
+}
+ 
+.letsdothis>p{   
+    font-family: graphik-regular;
+    font-size: 30px;
+}
+
+#btnpick{
+    background-color:#007c89 ;
+    border: none;
+    padding: 25px 50px ;
+    color: white;
+    font-family: graphik-medium ;
+}
+
+
+.footerall{
+    background-color: #efeeea;
+    width: 100%;
+    margin-top: 0px;
+    border: 1px solid transparent;
+}
+#rel2{
+    margin-left: 50px;
+    
+}
+.sp{
+    display: inline-block;
+    margin-left: 40px;
+    font-family: graphik-regular;
+    font-size: small;
+}
+#sp2{
+    margin-left: 620px;
+    font-family: graphik-regular ;
+    font-size: small;
+    
+}
+#link2{
+    font-family: graphik-medium;
+    font-size: small;
+}
+.rule{
+    height: 1px;
+    background-color: black;
+}
+.out1{
+    display: flex;
+   padding: 40px 250px;
+}
+.prodcts{
+    font-size: 16px;
+    font-family: graphik-regular;
+    padding: 50x;
+    line-height: 22px;
+    padding: 10px;
+    color: 
+    #241C15;
+    
+}
+.prodcts:hover{
+    cursor: pointer;
+
+}
+.heads{
+    font-family: graphik-medium;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: black;
+}
+.prodcts2{
+    font-family: means-web;
+    width: 180px;
+    font-size: 16px;
+    padding: 5px;
+    color: #241C15;
+}
+.prodcts2>img{
+    width: 175px;
+    height: 32px;
+}
+#lower{
+    margin-top: 80px;
+}
+.footerdown{
+    padding: 100px 80px;
+    margin-left: 200px;
+
+}
+.footerdown2{
+    display: flex;
+    padding: 20px;
+}
+#applink{
+    display: flex;
+}
+#applink>span{
+    margin-left: 20px;
+}
+.socialtags{
+    display: flex;
+    width: 400px;
+
+}
+.socialtags>span{
+    margin-left: 20px;
+}
+
+.tradmarkinfo{
+    font-size: 12px;
+    font-family: graphik-regular;
+    width: 250px;
+}
+.language{
+    
+   height: 60px;
+   width: 150px;
+   background-color: 
+   #efeeea;
+}
+#privacy{
+    font-family: graphik-medium;
+}
