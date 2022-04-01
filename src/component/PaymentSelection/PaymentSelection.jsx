@@ -26,7 +26,7 @@ export const PaymentSelection = () => {
         <div id="recommend">Mailchimp Recommends</div>
         <div id="PriceSummary">
           <div id="priceCard">
-            <div>
+            <div style={{ borderRight: "none" }}>
               <div id="premiumInput">
                 <div>Premium</div>
                 <input id="premiumRadio" type="radio" />
@@ -62,7 +62,13 @@ export const PaymentSelection = () => {
                 with 500 <span>contacts</span>
               </div>
             </div>
-            <div id="essential">
+            <div
+              style={{
+                backgroundColor: "rgb(229,242,243)",
+                border: "1px solid darkcyan",
+              }}
+              id="essential"
+            >
               <div id="premiumInput">
                 <div>Essentials</div>
                 <input id="premiumRadio" checked type="radio" />
@@ -73,7 +79,7 @@ export const PaymentSelection = () => {
               <div id="PremiumYou">You pay</div>
               <div id="PremiumPriceLogo" className="PremiumPriceLogo2">
                 <div id="priceLogo"> ₹</div>
-                <div>700</div>
+                <div>770</div>
               </div>
               <div id="month">a month</div>
               <div id="tenthousand">
@@ -110,9 +116,27 @@ export const PaymentSelection = () => {
                 </select>{" "}
               </div>
             </div>
-            <div id="otherPart"></div>
+            <div id="otherPart">
+              <div id="essentialPrice">
+                <div>Essentials plan</div>
+                <div>₹770.00</div>
+              </div>
+              <div id="fivehun">500 contacts*</div>
+              <div>5,000 email sends*</div>
+              <div id="otherPartDetail">
+                *When you exceed your limit, you incur additional charges of
+                ₹390.00/mo per additional 250 contacts (comes with additional
+                2,500 email sends).
+              </div>
+              <div id="learnMore">Learn More</div>
+              <button id="upgrade">Upgrade</button>
+            </div>
           </div>
         </div>
+      </div>
+      <div id="comparePlan">
+        <ArrowForwardIosIcon id="arrowForwardCompare" />
+        <div>Compare Plan Features</div>
       </div>
     </div>
   );

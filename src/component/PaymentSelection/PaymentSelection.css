@@ -23,12 +23,11 @@ justify-content: space-between;
      cursor: pointer;
  }
  #selectionSmall{
-     border: 2px solid cyan;
-     /* width: 100px; */
      display: flex;
      margin-top: 50px;
-     margin-left: 120px;
+     margin-left: 100px;
      font-size: 14px;
+     font-weight: 600;
      font-family: "Means Web",Georgia,Times,"Times New Roman",serif;
 
  }
@@ -47,9 +46,8 @@ justify-content: space-between;
     color: darkcyan;
 }
 #selectionBox{
-    border: 1px solid green;
     width: 84%;
-    height: 500px;
+    height: 470px;
     margin: auto;
     margin-top: 15px;
 }
@@ -199,4 +197,63 @@ text-align: center;
     background-color: transparent;
     color: darkcyan;
     font-size: 16px;
+    cursor: pointer;
+}
+#otherPart{
+    padding: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+
+    font-size: 14px;
+    font-family: "Graphik Web","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+}
+#essentialPrice{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+#fivehun{
+    margin: 10px 0px ;
+}
+
+#otherPartDetail{
+    line-height:
+    24px;
+    margin-top: 50px;
+    font-size: 12px;
+}
+#learnMore{
+    font-size: 12px;
+    color: darkcyan;
+    font-weight: 600;
+    margin-top: 10px;
+}
+#upgrade{
+    border: none;
+    background-color: darkcyan;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 40px;
+    height: 43px;
+    cursor: pointer;
+}
+#upgrade:hover{
+    background-color: #004e56;
+}
+#comparePlan{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    color: darkcyan;
+    /* justify-content: flex-end; */
+    font-weight: 600;
+    margin-top: -50px;
+    cursor: pointer;
+}
+#arrowForwardCompare{
+    height: 13px;
+    text-align: center;
+    margin-top: 4px;
 }
