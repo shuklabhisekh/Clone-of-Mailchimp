@@ -95,9 +95,13 @@ export const Campaign = () => {
                   another service. <br />
                   We’ll walk you through it.
                 </p>
-                <button style={{ background: "#007c89", marginRight: "10px" }}>
-                  Import Contacts
-                </button>
+                <Link to="/members/import">
+                  <button
+                    style={{ background: "#007c89", marginRight: "10px" }}
+                  >
+                    Import Contacts
+                  </button>
+                </Link>
                 <span className="finish-btn" onClick={() => csettoggle(false)}>
                   Cancel
                 </span>

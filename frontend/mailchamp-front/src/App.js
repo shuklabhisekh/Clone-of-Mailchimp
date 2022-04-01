@@ -6,6 +6,7 @@ import { Signup } from "./Components/Signup/Signup";
 import SignInSide from "./Components/Login/Login";
 import { Builder } from "./Components/Dashboard/builder";
 import { Campaigntemplate } from "./Components/Dashboard/campaignsTemplates";
+import { DashboardPage } from "./Components/Dashboard/DashboardContact";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
         <Route path="/login" element={<SignInSide />} />
         <Route path="/dashboard/templates" element={<Campaigntemplate />} />
         <Route path="/dashboard/builder/:id" element={<Builder />} />
+        <Route path="/members/import" element={<DashboardPage />}></Route>
       </Routes>
     </div>
   );

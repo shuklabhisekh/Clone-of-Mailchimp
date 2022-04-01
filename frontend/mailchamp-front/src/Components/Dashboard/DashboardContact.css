@@ -1,0 +1,248 @@
+#contact0 {
+  background-color: #ffe01b;
+
+  font-family: "Graphik Web Regular", "Helvetica Neue", Helvetica, Arial,
+    Verdana, sans-serif;
+}
+#contact1 {
+  /* margin-left: 8px; */
+  background-color: white;
+  border-left: 1px solid rgba(36, 28, 21, 0.15);
+  border-bottom: 1px solid white;
+  border-left: 8px solid #ffe01b;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#contactNav {
+  /* background-color: white; */
+  height: 70px;
+  border-bottom: 1px solid rgba(36, 28, 21, 0.15);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  /* margin-top: -20px; */
+  /* position: fixed; */
+  /* margin-top: -100px; */
+}
+
+#leftPart {
+  border: 2px solid transparent;
+  /* display:flex; */
+  /* justify-content: left; */
+  width: 250px;
+}
+#exit > button {
+  font-size: 14px;
+  height: 40px;
+  width: 85px;
+  background-color: white;
+  border: 1px solid darkcyan;
+  color: darkcyan;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-right: 60px;
+  /* font-weight: 600; */
+}
+#exit > button:hover {
+  color: white;
+  background-color: rgb(229, 242, 243);
+  border: none;
+}
+#importContact {
+  margin-top: -40px;
+  font-size: 20px;
+  margin-left: 80px;
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+}
+#chooseMethod {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Graphik Web Medium";
+  margin-left: 80px;
+  /* width: 200px; */
+}
+#border {
+  border-bottom: 2px solid darkcyan;
+  width: 100px;
+  margin-left: 80px;
+}
+#arrow {
+  height: 0px;
+  /* margin-top: 300px; */
+  color: black;
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-left: -20px;
+}
+#logo > img {
+  margin-left: 10px;
+  height: 40px;
+  cursor: pointer;
+}
+#contact2 {
+  width: 63%;
+  margin-top: 80px;
+  margin-left: 220px;
+}
+#contact21 {
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+  font-weight: 500;
+  /* width: 600px; */
+  text-align: left;
+  /* height: 40px; */
+}
+
+#contact22 {
+  font-family: "Graphik Web Regular", "Helvetica Neue", Helvetica, Arial,
+    Verdana, sans-serif;
+  width: 67%;
+  line-height: 24px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin-top: 25px;
+  text-align: left;
+}
+#contact22 > a {
+  color: darkcyan;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#chooseBox {
+  width: 78%;
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#chooseBox > div {
+  border: 1px solid rgba(36, 28, 21, 0.15);
+  height: 160px;
+  cursor: pointer;
+}
+#chooseBox > div:hover {
+  background-color: rgb(249, 248, 248);
+  border: 1px solid black;
+}
+
+#chooseBox1 {
+  cursor: pointer;
+  /* border: 1px solid rgba(36,28,21,0.15);; */
+  height: 160px;
+  width: 314px;
+  margin-top: 27px;
+  border: 1px solid darkcyan;
+  background-color: rgb(229, 242, 243);
+}
+/* #chooseBox1:hover{
+    border: 1px solid black;
+    background-color: rgb(249, 248, 248);
+
+} */
+#svg {
+  height: 25px;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#textName {
+  height: 25px;
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  color: black;
+  text-align: left;
+}
+#textInfo {
+  width: 80%;
+  text-align: left;
+  margin: auto;
+  margin-top: 10px;
+  color: rgba(36, 28, 21, 0.65);
+}
+#textInfo > span {
+  color: darkcyan;
+}
+
+#button {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  color: white;
+  height: 44px;
+  text-align: center;
+  width: 120px;
+  align-items: center;
+  padding-left: 30px;
+  margin-top: 70px;
+  background-color: darkcyan;
+  border: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: #004e56;
+}
+#questionMark {
+  border: 2px solid rgb(36, 28, 21);
+  width: 28px;
+  height: 28px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(36, 28, 21);
+  border-radius: 50%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1080px;
+  margin-top: -50px;
+  cursor: pointer;
+}
+#questionMark:hover {
+  background-color: darkcyan;
+  border: 2px solid darkcyan;
+}
+
+input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  border-radius: 15px;
+  /* top: -2px; */
+  left: 3px;
+  bottom: 3px;
+  position: relative;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  /* border: 2px solid white; */
+}
+
+input[type="radio"]:checked:after {
+  width: 13px;
+  height: 13px;
+  border-radius: 15px;
+  top: 5px;
+  left: 5px;
+  position: relative;
+  background-color: darkcyan;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  /* border: 1px solid darkcyan; */
+}
