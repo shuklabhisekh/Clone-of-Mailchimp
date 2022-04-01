@@ -6,12 +6,13 @@ Mailchimp is a marketing automation platform designed and developed for business
 
 ## Tech Stacks Used
 - React
-- Redux
+- UnLayer Library (Email Template)
+- GrapsJS (Website Template)
 - Mongodb
 - NodeJs
 - Material UI
-- Bootstrap
 - NodeMailer
+- Google API
 
 ## Major Functionality
 <!-- 1.  -->
