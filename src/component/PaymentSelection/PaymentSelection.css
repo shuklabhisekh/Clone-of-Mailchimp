@@ -50,5 +50,29 @@ justify-content: space-between;
     font-size: 14px;
     color: white;
     border-radius: 2px;
+}
 
+#PriceSummary{
+    border: 2px solid maroon;
+    display: grid;
+    grid-template-columns: 70% 28%;
+    justify-content: space-between;
+    height: 90%;
+}
+#PriceSummary>div{
+    /* border: 1px solid blue; */
+}
+#summaryCard{
+    height: 100%;
+    border: 1px solid gainsboro;
+}
+#priceCard{
+    border: 1px solid black;
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+#priceCard>div{
+    border: 1px solid gainsboro;
+ height: 100%;
 }

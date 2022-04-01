@@ -17,6 +17,20 @@ export const PaymentSelection = () => {
       </div>
       <div id="selectionBox">
         <div id="recommend">Mailchimp Recommends</div>
+        <div id="PriceSummary">
+          <div id="priceCard">
+            <div>
+              <div id="premiumInput">
+                <div>Premium</div>
+                <input type="radio" />
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div id="summaryCard"></div>
+        </div>
       </div>
     </div>
   );
