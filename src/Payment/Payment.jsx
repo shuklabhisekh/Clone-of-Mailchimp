@@ -2,10 +2,16 @@ import { useContext, useState } from "react";
 import "./payment.css";
 import { Crcard } from "./Crcard";
 import { Paypal } from "./Paypal";
+import {Pay_succes} from "./pay_success"
+
 
 
 export const Payment = () => {
   const [payment, setPayment] = useState("vikas");
+  const [show, setShow] = useState(true);
+
+
+
 
   return (
     <div className="main-container">
@@ -128,7 +134,13 @@ export const Payment = () => {
                 <span>₹{300}.00</span>    
               </div>
               <hr />
-              <button className="paynow-btn">Pay now</button>
+
+
+
+
+              <button  href="#myModal"    className="paynow-btn"   data-toggle="modal">Pay now</button>
+              <Pay_succes/>
+
 
               <p className="payment-paragraph">
                 By selecting “Pay Now”, I understand that I am enrolling in a subscription plan and I authorize Mailchimp to charge my payment method each month for the amount specified above (plus applicable taxes) unless I cancel. I can cancel anytime by going to my Billing page in the Account Settings.br<br/><br/>
