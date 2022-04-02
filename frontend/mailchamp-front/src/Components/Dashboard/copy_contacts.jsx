@@ -3,6 +3,7 @@ import "./copy_contacts.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import logo from "../../imges/logo.svg";
+import { useNavigate } from "react-router";
 
 export const CopyContacts = () => {
   ///////////////get user id from redux store
@@ -11,7 +12,7 @@ export const CopyContacts = () => {
   //////////////////////////////////////////
 
   const [contacts, setcontacts] = React.useState(``);
-
+  const navigate = useNavigate();
   const handle_data = (e) => {
     setcontacts(e.target.value);
   };
@@ -39,15 +40,17 @@ export const CopyContacts = () => {
 
       my_contacts_arr.push(obj);
     });
-    postcontacts(my_contacts_arr);
+    // console.log("contacts", my_contacts_arr);
+    postcontacts(my_contacts_arr, user_id);
     localStorage.setItem("contact", JSON.stringify(my_contacts_arr));
   };
 
-  const postcontacts = (data) => {
+  const postcontacts = (data, user_id) => {
     axios
       .post(`http://localhost:3001/subscriber/many/${user_id}`, data)
       .then((res) => {
         console.log("res", res);
+        navigate("/dashboard/campaigns");
       })
       .catch((err) => {
         console.log(err);
@@ -98,7 +101,7 @@ freddie@pottedplanter.com	Freddie		Jones		7172 Example Dr. Sylvania "
         ></textarea>
 
         <button id="contact_con_btn" onClick={submit_data}>
-          <Link to="/dashboard/campaigns">Continue to Organise</Link>
+          Continue to Organise
         </button>
       </div>
     </div>

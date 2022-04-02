@@ -109,7 +109,9 @@ export const DashboardPage = () => {
           </div>
           <div id="questionMark">?</div>
           <button id="button">
-            <Link to="/members/importList">Continue</Link>
+            <Link to="/members/importList" style={{ color: "#fff" }}>
+              Continue
+            </Link>
           </button>
         </div>
       </div>

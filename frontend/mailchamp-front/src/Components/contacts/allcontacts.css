@@ -38,7 +38,8 @@
   padding: 10px;
 }
 
-.over > p:hover {
+.over > p:hover,
+.submenu-head-contact:hover {
   color: #007c89;
   cursor: pointer;
 }
@@ -161,4 +162,47 @@ select:focus {
 
 .email-cell {
   width: 50%;
+}
+
+.submenu-head-contact {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.submenu-head-contact span:last-child {
+  margin-top: 5px;
+}
+.submenu--contact {
+  list-style: none;
+  position: absolute;
+  /* left: 0; */
+  background: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0;
+  overflow-y: auto;
+  max-height: 480px;
+  border: 1px solid #bdbbb9;
+  border-radius: 0 0 6px 6px;
+
+  box-shadow: 0 1px 8px rgb(0 0 0 / 20%);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.submenu--contact li {
+  padding: 15px 25px;
+}
+
+.submenu--contact li:hover {
+  background-color: #e6f2f3;
+}
+
+.show--submenu-contact.submenu--contact {
+  display: block;
+}
+.hide--submenu-contact.submenu--contact {
+  display: none;
 }

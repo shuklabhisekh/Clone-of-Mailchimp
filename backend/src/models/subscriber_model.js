@@ -1,36 +1,32 @@
 const mongoose = require("mongoose");
 
+const subscriber_schema = new mongoose.Schema(
+  {
+    first_name: { type: String },
 
+    last_name: { type: String },
 
-const subscriber_schema = new mongoose.Schema({
+    email: { type: String },
 
-    first_name:{type:String,required:true },
+    address: { type: String },
 
-    last_name:{type:String, required:true},
-    
-    email:{type:String, required:true},
+    phone_number: { type: Number },
 
-    address:{type:String},
+    birth_day: { type: Date },
 
-   phone_number:{type:Number},
+    tag: { type: String, default: "" },
 
-   birth_day:{type:Date},
+    user_id: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "user",
+      required: true,
+    },
+  },
+  {
+    versionKey: false,
+    timestamps: true,
+  }
+);
 
-   tag:{type:String ,default:""},
-
-   user_id:{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "user",
-    required: true,
-   }
-
-
-   
-},{
-    versionKey:false,
-    timestamps:true,
-});
-
-
-const Subscriber = mongoose.model("subscriber",subscriber_schema)
+const Subscriber = mongoose.model("subscriber", subscriber_schema);
 module.exports = Subscriber;

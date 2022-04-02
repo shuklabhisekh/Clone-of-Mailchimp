@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
+import Parser from "html-react-parser";
 export const Campaign = () => {
   const [ctoggle, csettoggle] = useState(false);
   const [ctoggle1, csettoggle1] = useState(false);
@@ -501,6 +502,9 @@ export const Campaign = () => {
               width="200px"
               height="250px"
             />
+            {/* <div style={{ width: "200px", height: "250px" }}>
+              {Parser(JSON.parse(html))}
+            </div> */}
           </div>
         </div>
       </div>

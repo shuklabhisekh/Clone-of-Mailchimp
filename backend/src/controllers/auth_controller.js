@@ -1,12 +1,12 @@
 const user = require("../models/user_model");
 
-require("dotenv").config();
+// require("dotenv").config();
 
 const jwt = require("jsonwebtoken");
 // const res = require("express/lib/response");
 
 const newToken = (user) => {
-  return jwt.sign({ user }, "process.env.jwt_sec_key");
+  return jwt.sign({ user }, "mailchimp");
 };
 
 const register = async (req, res) => {

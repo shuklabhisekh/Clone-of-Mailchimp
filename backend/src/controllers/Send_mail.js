@@ -17,10 +17,73 @@ router.post("/sendverification", async (req, res) => {
   console.log("the data is from send server", req.body);
   function myhtml(name) {
     return `
-    <div style="width: 50%; margin: auto;text-align: center; background-color: antiquewhite;padding:  50px 20px  50px 20px; border-radius: 5px">
-        <h3>Account verification</h3>
-        <p>hey ${name} , to ensure account security we'll need to verify your identity.</p>
-        <a href="http://localhost:3000/login"><button style="background-color: burlywood; border-radius: 5px; border: none; padding:  5px 15px  5px 15px;">Verify</button></a>
+    <div style="width: 80%; margin: auto; background-color: #efeeea">
+      <div style="background-color: #ffe01b; height: 220px; margin: auto">
+        <div style="width: 150px; margin: auto">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrWxTOn47t_x5l7OFkh0SOkC9y4NpG3ZaaOcvOwL0bMG0RBjh8Cf5tTsPGYntl1aO2QXo&usqp=CAU"
+            alt=""
+            style="height: 150px"
+          />
+        </div>
+      </div>
+      <div
+        style="
+          width: 50%;
+          margin: auto;
+          position: relative;
+          top: -100px;
+          background-color: white;
+          text-align: center;
+          padding: 50px;
+        "
+      >
+        <p style="font-family: Lora; font-size: 30px; font-weight: 400">
+          We're glad you're here,
+        </p>
+        <p style="font-family: Lora; font-size: 30px; font-weight: 400">
+          ${name}
+        </p>
+        <a href="http://localhost:3000/login" traget="_blank">
+          <button
+            style="
+              background-color: #007c89;
+              border-radius: 0px;
+              border: none;
+              padding: 15px 22px 15px 22px;
+              color: white;
+              margin-top: 20px;
+              width: 200px;
+              font-size: 18px;
+              font-weight: 400;
+              cursor: pointer;
+            "
+          >
+            Activate Account
+          </button>
+        </a>
+        <p
+          style="
+            font-family: Lora;
+            font-size: 15px;
+            margin-top: 100px;
+            color: rgb(77, 71, 71);
+          "
+        >
+          (Just confirming you're you.)
+        </p>
+        <br />
+        <hr style="color: rgb(77, 71, 71)" />
+        <p style="color: darkgrey">
+          © 2001-2022 Mailchimp®, All Rights Reserved.
+        </p>
+        <p style="color: darkgrey">
+          675 Ponce De Leon Ave NE • Suite 5000 • Atlanta, GA 30308 USA
+        </p>
+        <p style="color: darkcyan">
+          Contact Us • Terms of Use • Privacy Policy
+        </p>
+      </div>
     </div>
     `;
   }

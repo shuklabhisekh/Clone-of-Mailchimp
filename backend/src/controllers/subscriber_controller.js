@@ -18,10 +18,10 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-
 router.post("/:id", async (req, res) => {
   try {
     req.body.user_id = req.params.id;
+
     const subscriber_data = await Subscriber.create(req.body);
 
     return res.send(subscriber_data);
@@ -40,7 +40,6 @@ router.post("/sbuscriberfile/:id", async (req, res) => {
 
     mydata.map((el) => (el.user_id = req.params.id));
 
-
     const subscriber_data = await Subscriber.insertMany(mydata);
 
     return res.send(subscriber_data);
@@ -52,7 +51,8 @@ router.post("/sbuscriberfile/:id", async (req, res) => {
 router.post("/many/:id", async (req, res) => {
   try {
     const data = req.body;
-     data.map((el) => (el.user_id = req.params.id));
+    console.log(data);
+    data.map((el) => (el.user_id = req.params.id));
 
     const subscriber_data = await Subscriber.insertMany(data);
 
