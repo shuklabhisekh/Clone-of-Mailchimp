@@ -10,6 +10,7 @@ import { DashboardPage } from "./Components/Dashboard/DashboardContact";
 import { CopyContacts } from "./Components/Dashboard/copy_contacts";
 import { WebBuilder } from "./Components/Dashboard/websitebuilder";
 import { ActivationPage } from "./Components/Signup/activationPage";
+import { PaymentSelection } from "./Components/Payment/PaymentSelection";
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,7 @@ function App() {
           path="/dashboard/websitebuilder"
           element={<WebBuilder />}
         ></Route>
+        <Route path="/payment" element={<PaymentSelection />}></Route>
       </Routes>
     </div>
   );

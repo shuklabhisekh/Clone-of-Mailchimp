@@ -5,6 +5,7 @@ import create from "../../imges/sidemenu-icon/create.svg";
 import search from "../../imges/sidemenu-icon/search.svg";
 import logo from "../../imges/logo.svg";
 import star from "../../imges/star.svg";
+import { Link } from "react-router-dom";
 export const Sidemenu = ({ stateToggle, toggle, getProfile }) => {
   const accordionData = [
     {
@@ -90,8 +91,12 @@ export const Sidemenu = ({ stateToggle, toggle, getProfile }) => {
         </div>
       </div>
       <div className="profile">
-        <img src={star} className={toggle ? "hoverimg" : "imghide"} />
-        <button>Upgrade</button>
+        <Link to="/payment">
+          <img src={star} className={toggle ? "hoverimg" : "imghide"} />
+        </Link>
+        <Link to="/payment">
+          <button>Upgrade</button>
+        </Link>
 
         <div className={toggle ? "showname" : ""}>
           <div
