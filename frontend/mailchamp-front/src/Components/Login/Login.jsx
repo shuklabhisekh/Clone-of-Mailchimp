@@ -77,11 +77,14 @@ export default function SignInSide() {
         });
         let data = await responce.json();
         localStorage.setItem("user", JSON.stringify(data));
-        navigate("/dashboard");
-      } catch (err) {
-        alert("error please try again");
-        navigate("/login");
-      }
+        console.log("data", data.message);
+        if (!data.message) {
+          navigate("/dashboard");
+        } else {
+          alert("error please try again");
+          navigate("/login");
+        }
+      } catch (err) {}
 
       // console.log("data send to mongo", data);
     }

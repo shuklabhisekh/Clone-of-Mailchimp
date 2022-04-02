@@ -1,6 +1,8 @@
 import "./PaymentSelection.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ClearIcon from "@mui/icons-material/Clear";
+import { Link } from "react-router-dom";
+
 export const PaymentSelection = () => {
   return (
     <div id="page">
@@ -129,7 +131,9 @@ export const PaymentSelection = () => {
                 2,500 email sends).
               </div>
               <div id="learnMore">Learn More</div>
-              <button id="upgrade">Upgrade</button>
+              <button id="upgrade">
+                <Link to="/paymentSection">Upgrade</Link>
+              </button>
             </div>
           </div>
         </div>

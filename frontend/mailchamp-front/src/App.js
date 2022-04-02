@@ -11,6 +11,7 @@ import { CopyContacts } from "./Components/Dashboard/copy_contacts";
 import { WebBuilder } from "./Components/Dashboard/websitebuilder";
 import { ActivationPage } from "./Components/Signup/activationPage";
 import { PaymentSelection } from "./Components/Payment/PaymentSelection";
+import { Payment } from "./Components/Payment/Payment";
 function App() {
   return (
     <div className="App">
@@ -30,6 +31,7 @@ function App() {
           element={<WebBuilder />}
         ></Route>
         <Route path="/payment" element={<PaymentSelection />}></Route>
+        <Route path="/paymentSection" element={<Payment />} />
       </Routes>
     </div>
   );

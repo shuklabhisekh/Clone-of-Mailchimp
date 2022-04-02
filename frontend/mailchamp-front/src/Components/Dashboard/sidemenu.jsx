@@ -94,9 +94,11 @@ export const Sidemenu = ({ stateToggle, toggle, getProfile }) => {
         <Link to="/payment">
           <img src={star} className={toggle ? "hoverimg" : "imghide"} />
         </Link>
-        <Link to="/payment">
-          <button>Upgrade</button>
-        </Link>
+
+        <button>
+          {" "}
+          <Link to="/payment">Upgrade</Link>
+        </button>
 
         <div className={toggle ? "showname" : ""}>
           <div
