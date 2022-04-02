@@ -1,0 +1,156 @@
+@font-face{
+    font-family: "means-web";
+    src: url(../fonts/Means-Light-Web.7121f5d6.woff2);
+}
+@font-face{
+    font-family: "graphik-regular";
+    src: url(../fonts/Graphik-Regular-Web.11b60cc4.woff2);
+}
+@font-face {
+    font-family: "graphik-medium";
+    src: url(../fonts/Graphik-Medium-Web.dcadfa4d.woff2);
+}
+
+
+.audi{
+    padding: 10px;
+    padding-top: 20px;
+}
+.audi>h1{
+    font-family: means-web;
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.audi>p{
+    font-family: graphik-regular;
+    font-size: 25px;
+}
+.audi>h2{
+    font-family: graphik-regular;
+    font-weight: 200;
+    font-size: 35px;
+    margin-top: 0px;
+}
+.over{
+    font-family:graphik-medium ;
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+}
+.over>p{
+    margin-left: 20px;
+}
+.over>p:hover{
+   color: 
+   #007c89;
+   cursor: pointer;
+}
+#overview{
+    margin-left: 0px;
+}
+#select1{
+    border: none;
+    width: 190px;
+    font-family:graphik-medium ;
+    margin-left: 20px;
+    font-size: 20px;
+}
+#select2{
+    border: none;
+    width: 150px;
+    font-family:graphik-medium ;
+    font-size: 20px;
+    margin-left: 20px;
+}
+#select3{
+    border: none;
+    width: 190px;
+    width: 120px;
+    font-family:graphik-medium ;
+    margin-left: 20px;
+    font-size: 20px;
+}
+#select1,#select2:hover,#select3:hover{
+    color: 
+    #007c89;
+    cursor: pointer;
+ }
+ #rule{
+     background-color: black;
+     height: 0.1px;
+     border: none;
+     
+     
+ }
+ .srchdiv{
+     padding: 10px;
+     margin-top: 20px;
+ }
+ .srchimg{
+    width: 20px;
+    /* height: 50px; */
+ }
+ .srchimg:hover{
+     cursor: pointer;
+ }
+
+.column{
+    display: flex;
+    justify-content: end;
+}
+.toggle{
+    background-color:white;
+    padding: 8px 10px;
+    font-family: graphik-regular;
+    border-width: 1px;
+    margin-right: 30px;
+}
+.export{
+    background-color: 
+    #efeeea;
+    border: none;
+    margin-right: 30px;
+    font-family: graphik-medium;
+}
+
+.filterby{
+    display: flex;
+    background-color:#f2f2f2;
+    margin-top: 20px;
+}
+.sgmnt{
+    font-family: graphik-regular;
+    background-color:hsl(0, 0%, 95%) ;
+    border: none;
+    margin-left: 20px;
+}
+#Newsgmnt{
+    font-family: graphik-medium;
+    margin-left: 20px;
+}
+.tabl{
+    font-family: graphik-regular;
+    font-size: 15px;
+    font-weight: 100;
+  
+   border:1;
+ 
+}
+/* .tabl>table>tr>th{
+    padding: 5px;
+    border: 1px solid black;
+} */
+#maintable>tr{
+    overflow: scroll;
+}
+#maintable>tr>th{
+    padding: 10px 20px;
+    
+}
+#maintable>tr>td{
+    
+}
+
+
+
