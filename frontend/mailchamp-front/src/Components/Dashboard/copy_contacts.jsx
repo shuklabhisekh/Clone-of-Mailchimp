@@ -6,7 +6,8 @@ import logo from "../../imges/logo.svg";
 
 export const CopyContacts = () => {
   ///////////////get user id from redux store
-  const user_id = "6243ded2b2b25f5a8526ffac";
+  let { user_data } = JSON.parse(localStorage.getItem("user"));
+  const user_id = user_data._id;
   //////////////////////////////////////////
 
   const [contacts, setcontacts] = React.useState(``);
@@ -43,7 +44,14 @@ export const CopyContacts = () => {
   };
 
   const postcontacts = (data) => {
-    axios.post(`http://localhost:3001/subscriber/many/${user_id}`, data);
+    axios
+      .post(`http://localhost:3001/subscriber/many/${user_id}`, data)
+      .then((res) => {
+        console.log("res", res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (

@@ -13,7 +13,7 @@ export const Sidemenu = ({ stateToggle, toggle, getProfile }) => {
       icon: "sidemenu-icon/audience.svg",
       content: [
         "Audience Dashboard",
-        "All Contacts",
+        <Link to="/dashboard/listmembers">All Contacts</Link>,
         "Signup froms",
         "Tag",
         "Segments",
@@ -72,14 +72,18 @@ export const Sidemenu = ({ stateToggle, toggle, getProfile }) => {
   return (
     <div className={toggle ? `sidemenu sidemenu-small` : "sidemenu"}>
       <div>
-        <div className="flex admin-logo">
-          <img src={logo} width="80%" alt="" />
-          <span className="collpase" onClick={stateToggle}></span>
-        </div>
-        <div className="create flex" style={{ gap: "13px" }}>
-          <img src={create} alt="" />
-          <span>Create</span>
-        </div>
+        <Link to="/dashboard">
+          <div className="flex admin-logo">
+            <img src={logo} width="80%" alt="" />
+            <span className="collpase" onClick={stateToggle}></span>
+          </div>
+        </Link>
+        <Link to="/dashboard/campaigns">
+          <div className="create flex" style={{ gap: "13px" }}>
+            <img src={create} alt="" />
+            <span>Create</span>
+          </div>
+        </Link>
         <div className="accordion">
           {accordionData.map(({ title, content, icon }) => (
             <Accordion title={title} content={content} icon={icon} />
@@ -91,9 +95,7 @@ export const Sidemenu = ({ stateToggle, toggle, getProfile }) => {
         </div>
       </div>
       <div className="profile">
-        <Link to="/payment">
-          <img src={star} className={toggle ? "hoverimg" : "imghide"} />
-        </Link>
+        <img src={star} className={toggle ? "hoverimg" : "imghide"} />
 
         <button>
           {" "}

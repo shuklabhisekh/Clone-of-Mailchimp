@@ -59,11 +59,11 @@
   transform: rotate(-40deg);
 }
 
-.container {
+.container--camp {
   margin-top: -35px;
 }
 
-.container > p {
+.container--camp > p {
   font-size: 13px;
   text-align: center;
   line-height: 20px;
@@ -71,14 +71,14 @@
   margin: 35px 0;
 }
 
-.container > p a {
+.container--camp > p a {
   color: #004e56;
   font-weight: 500;
   font-family: "Graphik Web Medium";
   font-size: 13px;
   padding-left: 5px;
 }
-.container h3 {
+.container--camp h3 {
   font-size: 32px;
   font-family: "Means Web";
   line-height: 36px;

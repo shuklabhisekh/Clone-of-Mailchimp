@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Accordion2 from "./Accordion2";
 import { Link } from "react-router-dom";
+import axios from "axios";
 export const Steps = ({ toggle, getRoute }) => {
   const accordionData = [
     {
       title: "Create your first campaign",
       content: (
-        <div className="container">
+        <div className="container--camp">
           <h3>Choose how you’d like to start</h3>
           <div className="card-container">
             <div className="card">
@@ -56,7 +57,7 @@ export const Steps = ({ toggle, getRoute }) => {
     {
       title: "Add your contacts",
       content: (
-        <div className="container">
+        <div className="container--camp">
           <h3>These are the people who make up your audience</h3>
           <p
             style={{ textAlign: "left", fontSize: "16px", marginTop: "-13px" }}
@@ -86,7 +87,7 @@ export const Steps = ({ toggle, getRoute }) => {
     {
       title: "Launch",
       content: (
-        <div className="container">
+        <div className="container--camp">
           <h3>Share your campaign with the world</h3>
           <div className="card card-contact">
             <div style={{ display: "flex", padding: "8px" }}>
@@ -125,6 +126,21 @@ export const Steps = ({ toggle, getRoute }) => {
       ),
     },
   ];
+
+  const [totalAudience, settotalAudience] = useState(1);
+  let { user_data } = JSON.parse(localStorage.getItem("user"));
+  const user_id = user_data._id;
+  useEffect(() => {
+    axios
+      .get(`https://localhost:3001/subscriber/${user_id}`)
+      .then(({ data }) => {
+        console.log(data);
+        settotalAudience(data.length);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <div>
       <div className="content--header">
@@ -162,7 +178,7 @@ export const Steps = ({ toggle, getRoute }) => {
             <p className="color-teal">Add contact</p>
           </div>
           <div>
-            <h1>1</h1>
+            <h1>{totalAudience}</h1>
             <p>
               +1 (<span className="color-teal">+100%</span>) this week
             </p>

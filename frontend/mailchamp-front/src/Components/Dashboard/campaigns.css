@@ -189,6 +189,7 @@
   color: teal;
   border-bottom: 1px solid teal;
   cursor: pointer;
+  margin: 10px;
 }
 
 .bg-email {
@@ -388,4 +389,32 @@
 
 .mt {
   margin: 0;
+}
+
+.loading {
+  position: absolute;
+  left: 265px;
+  top: 100px;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  z-index: 10;
+}
+.hide-loader.loading {
+  display: none;
+}
+.show-loader.loading {
+  display: block;
+}
+
+.loading span {
+  width: 50px;
+  height: 50px;
+  border: 15px solid teal;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

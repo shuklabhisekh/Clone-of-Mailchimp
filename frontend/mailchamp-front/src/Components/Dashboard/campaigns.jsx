@@ -51,8 +51,9 @@ export const Campaign = () => {
     }
   }, [removeItems]);
   //GETING DATA
-
+  const [loader, setloader] = useState(false);
   function storeData() {
+    setloader(true);
     let [sub, prev] = subject;
     let data = { contacts, fromdata, sub, prev, html };
     axios
@@ -61,10 +62,12 @@ export const Campaign = () => {
       })
       .then((res) => {
         console.log(res);
+        setloader(false);
         alert("successfully send emails...");
       })
       .catch((err) => {
         console.log(err);
+        setloader(false);
         alert("failed to send emails..");
       });
     removeItems();
@@ -80,7 +83,9 @@ export const Campaign = () => {
 
   return (
     <div className="campaign-container">
-      <div className="loading"></div>
+      <div className={loader ? "loading show-loader" : "loading hide-loader"}>
+        <span></span>
+      </div>
       <div className="campaign-nav">
         <div>
           <div className="bg-email"></div>

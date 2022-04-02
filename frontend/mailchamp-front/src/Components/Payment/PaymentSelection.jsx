@@ -10,7 +10,9 @@ export const PaymentSelection = () => {
         <div></div>
         <div id="selectaPlan">Select A Plan</div>
         <div id="x">
-          <ClearIcon />
+          <Link to="/dashboard">
+            <ClearIcon />
+          </Link>
         </div>
       </div>
       <div id="selectionSmall">

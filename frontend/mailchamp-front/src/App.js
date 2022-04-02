@@ -12,6 +12,7 @@ import { WebBuilder } from "./Components/Dashboard/websitebuilder";
 import { ActivationPage } from "./Components/Signup/activationPage";
 import { PaymentSelection } from "./Components/Payment/PaymentSelection";
 import { Payment } from "./Components/Payment/Payment";
+
 function App() {
   return (
     <div className="App">

@@ -69,6 +69,7 @@
   /* border: 1px solid black; */
   padding: 10px 20px;
   padding-right: 15px;
+  cursor: pointer;
 }
 
 .create {
@@ -137,6 +138,7 @@
 .accor-subList li {
   padding: 3px 0;
   padding-left: 60px;
+  cursor: pointer;
 }
 
 .dashboard-profile {
