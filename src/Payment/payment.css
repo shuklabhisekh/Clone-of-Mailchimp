@@ -1,0 +1,709 @@
+/* .main-container {
+  margin: auto;
+  width: 80%;
+} */
+
+body {
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .container {
+    width: 78%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+  
+  .main-div {
+    width: 75%;
+    margin: auto;
+    margin-right: 20px;
+    margin-top: 0px;
+  }
+  
+  .four-divs {
+    width: 100%;
+  }
+  
+  .main-header {
+    /* width: 100%; */
+    /* font-family: Helvetica, sans-serif; */
+    height: 60px;
+    background-color: #efeeea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    justify-content: right;
+  }
+  
+  .Sub-main-header {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+  }
+  
+  .Sub-main-header img {
+    cursor: pointer;
+  }
+  
+  .main-header h1 {
+    font-size: 16px;
+    font-weight: 500;
+    /* border: 1px solid green; */
+  }
+  
+  /* .plan-image-div {
+    margin-left: 300px;
+  } */
+  
+  .plan-image-div {
+    text-align: right;
+  }
+  
+  .container hr {
+    border: 0.2px solid #efeeea;
+  }
+  
+  .page-link-div {
+    width: 73%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: start;
+    font-size: 13px;
+    text-align: start;
+    margin-top: 10px;
+    /* border: 1px solid; */
+    font-family: Helvetica, sans-serif;
+  }
+  .page-link-div p {
+    margin-right: 20px;
+  }
+  /* 
+  .page-link-div p:nth-child(2) {
+    color: #007c89;
+  } */
+  
+  .paypal-div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .paypal-image {
+    width: 65px;
+    height: 18px;
+  }
+  
+  .paypal-span {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .paypal-connect-btn {
+    margin-top: 20px;
+    height: 36px;
+    background-color: #007c89;
+    color: #ffffff;
+    width: 35%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .paypal-connect-btn a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .div1 {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+  }
+  .header-div {
+    text-align: start;
+    width: 25%;
+  }
+  
+  .header-div h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    /* border: 1px solid; */
+    min-width: 200px;
+  }
+  
+  .card-details-div {
+    width: 75%;
+    text-align: start;
+  }
+  
+  .payment-btns {
+    margin-bottom: 20px;
+  }
+  
+  .payment-btns-btn {
+    font-size: 13px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 0px;
+    /* margin-right: 20px; */
+    padding-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    /* border: 1px solid red; */
+    /* height: 20px; */
+  }
+  .payment-btns-btn p {
+    margin-bottom: 0px;
+  }
+  
+  .payment-btns-btn:focus {
+    border-bottom: 2px solid #007c89;
+  }
+  
+  .card-img-div  {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .card-number-text {
+    padding-bottom: 10px;
+  }
+  
+  .card-number-text h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  
+  .form-container {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 0px;
+    height: 31px;
+  }
+  
+  .card-input-div {
+    width: 67%;
+  
+    border: 1px solid gray;
+    height: 36px;
+    display: flex;
+  }
+  #card-number-input {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid grey; */
+    /* outline: none; */
+    position: relative;
+    color: black;
+    z-index: 2000;
+    display: inline;
+    opacity: 1;
+    margin-bottom: 15px;
+  }
+  #sart{
+    border: 1px solid red;
+    display: inline-block;
+    visibility: visible;
+    
+  }
+  
+  .expire-cvv-details-div {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    /* border: 1px solid red; */
+  }
+  
+  .expire-detail-div h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .form-container span {
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  
+  .month-input {
+    width: 40%;
+    height: 36px;
+    border: 1px solid grey;
+    outline: none;
+  }
+  .form-container-btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .form-container img {
+    margin-right: 5px;
+    width: 36px;
+    height: 23px;
+  }
+  
+  .form-container h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .form-container .card-number {
+    width: 52%;
+    height: 40px;
+  }
+  
+  .expire-detail-div {
+    width: 50%;
+  }
+  
+  .expire-detail-input-div input {
+    margin-right: 20px;
+    border: 1px solid grey;
+    outline: none;
+  }
+  
+  .month-year-input-div .month-input,
+  .month-year-input-div .year-input {
+    width: 100px;
+    height: 36px;
+    border: 1px solid grey;
+    outline: none;
+     padding-left: 5px;
+    border: 1px solid grey;
+    outline: none;
+    opacity: 1;
+  }
+  .month-year-input-div .year-input{
+    position: relative;
+  }
+  
+  .cvv-detail-div {
+    margin: 0px 0px 12px;
+  }
+  
+  .cvv-detail-div h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .cvv-detail-div input {
+    width: 100px;
+    height: 36px;
+    border: 1px solid grey;
+    outline: none;
+    opacity: 1;
+  }
+  
+  .save-btn button {
+    margin-top: 22px;
+    border: none;
+    background-color: none;
+    width: 12%;
+    font-size: 16px;
+    /* border: 1px solid gray; */
+    background-color: #706b67;
+    color: white;
+    height: 36px;
+  
+  }
+  
+  .div2 {
+    display: flex;
+    width: 100%;
+  }
+  
+  .contact-div {
+    text-align: start;
+    width: 25%;
+  }
+  
+  .div2 h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .div3 {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .div3 h3 {
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .tax-setting-div {
+    text-align: start;
+    width: 25%;
+  }
+  
+  .tax-right-div {
+    width: 75%;
+    margin-top: 20px;
+    text-align: start;
+  }
+  .tax-right-div .optional {
+    color: rgba(169, 176, 182, 0.74);
+  }
+  
+  .tax-setting-input {
+    width: 98%;
+    margin-top: 10px;
+    height: 36px;
+    margin-bottom: 40px;
+    opacity: 1;
+    /* border: 1px solid red; */
+  }
+  .tax-setting-input input{
+    opacity: 1;
+     border: 1px solid gray;
+     width: 100%;
+     height: 40px;
+     position: relative;
+  }
+  .tax-setting-input:focus {
+    border: 3px solid #47a2ac;
+  }
+  
+  .tax-save-btn {
+    background-color: #007c89;
+    /* padding: 0 32px 0 32px; */
+    height: 36px;
+    width: 15%;
+    outline: none;
+    border: none;
+    color: #ffffff;
+  }
+  
+  .tax-cancel-btn {
+    color: #007c89;
+    background-color: transparent;
+    width: 20%;
+    height: 36px;
+    outline: none;
+    border: none;
+  }
+  
+  .tax-cancel-btn:hover {
+    background-color: #bfe3e7;
+  }
+  
+  .div4 {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  .billing-header {
+    text-align: start;
+    width: 25%;
+  }
+  
+  .div4 h3 {
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .billing-address {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .billing-address input {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    opacity: 1;
+  }
+  
+  .billing-address span {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+  
+  .purchase-total-div {
+    width: 28%;
+    /* border: 1px solid black; */
+  }
+  
+  .purchase-header {
+    padding: 15px 20px 25px 20px;
+  
+    background-color: #efeeea;
+    text-align: start;
+  }
+  
+  .purchase-header h3 {
+    margin-top: 0px;
+    font-size: 24px;
+    /* font-family: Helvetica, sans-serif; */
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  
+  .purchase-header span {
+    font-size: 16px;
+  }
+  
+  .total-payment-list {
+    padding: 20px;
+    border: 0.5px solid rgb(216, 216, 216);
+    border-top: none;
+  }
+  
+  .payment-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  
+  .heading-list span {
+    font-weight: bold;
+  }
+  .another-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .total-payment {
+    font-size: 16px;
+  }
+  
+  .paynow-btn {
+    width: 100%;
+    height: 36px;
+    background-color: #007c89;
+    color: #ffffff;
+    border: none;
+    margin-top: 15%;
+  }
+  
+  .payment-paragraph {
+      margin-top: 15%;
+    font-size: 14px;
+    color: grey;
+    text-align: start;
+    line-height: 1.2rem;
+  }
+  
+  .payment-link {
+    font-size: 12px;
+    text-align: start;
+    color: #007c89;
+    font-weight: bold;
+  }
+  
+  .email-edit p {
+    font-size: 12px;
+    text-align: start;
+    margin-bottom: 0px;
+  }
+  
+  .email-text {
+    font-weight: 600;
+    margin-top: 0px;
+  }
+  
+  .email-edit {
+    /* text-align: end; */
+    font-size: 12px;
+    /* color: #007c89; */
+    margin: 0px;
+  }
+  
+  .last-paragraph {
+    font-size: 14px;
+    text-align: start;
+    margin-top: 20px;
+    color: grey;
+    line-height: 1.3rem;
+  }
+  
+  /* Payment card */
+  
+  .payment-card-div {
+    /* width: 800px; */
+    /* border: 1px solid black; */
+  
+    display: flex;
+  }
+  
+  .inner-plans-div {
+    margin: auto;
+    width: 78%;
+    display: flex;
+   
+    justify-content: space-between;
+  }
+  
+  .inner-plan-left-div {
+    width: 75%;
+    padding-right: 0px;
+  }
+  
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 200px;
+    border: 0.5px solid rgb(230, 227, 227);
+    text-align: start;
+    padding-left: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-right: 10px;
+     /* border: 2px solid red; */
+  }
+  
+  .card1:focus,
+  .card2:focus,
+  .card3:focus,
+  .card4:focus {
+    border: 1px solid #007c89;
+    background-color: rgba(197, 219, 242, 0.1);
+  }
+  
+  .card1-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card1-div h2 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  
+  .card1-div input {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  /* .card1-div input::before {
+    background-color: none;
+  } */
+  
+  .card1-div input:focus {
+    background-color: #007c89;
+  }
+  
+  .paragraph {
+    color: grey;
+    font-size: 13px;
+    margin-bottom: 40px;
+    line-height: 1.2rem;
+  }
+  
+  .you-pay-paragraph {
+    font-size: 13px;
+    color: gray;
+    text-align: center;
+  }
+  
+  .rupee-symbol {
+    height: 20px;
+    font-weight: 500;
+  }
+  
+  .rupee {
+    font-family: Helvetica, sans-serif;
+    font-size: 54px;
+  }
+  
+  .amount {
+    text-align: center;
+  }
+  
+  .contact-total {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .current-plan {
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 0px;
+    margin-top: 0;
+  }
+  
+  .card4-div {
+    margin-top: 0px;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .card4-div h2,
+  .card4-div input {
+    margin-top: 0px;
+  }
+  
+  .plans-upgrade-div {
+    /* margin-left: 0px; */
+    width: 28%;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .free-plan-btn {
+    background-color: #efeeea;
+  }
+  
+  .indian-rupees {
+      font-size: 102%;
+    color: #47a2ac;
+    background-color: #efeeea;
+    border: none;
+  }
+  
+  .prevLink {
+    text-decoration: none;
+    color: black;
+    color: #47a2ac;
+  }
+  
+  .recommends {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: #007c89;
+    padding: 4px 0 4px 0;
+    height: 18px;
+  }
+  
+  .free-btn {
+    background-color: #efeeea;
+  }
+  
+  body {
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .Subnavbarpay {
+    color: #47a2ac;
+  }
