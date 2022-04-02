@@ -1,0 +1,242 @@
+.content {
+  margin-left: 265px;
+  padding: 0 70px;
+}
+
+.expand.content {
+  margin-left: 70px;
+  padding: 0 120px;
+}
+
+.right-accordion {
+  padding: 15px 0;
+  border-top: 1px solid rgba(36, 28, 21, 0.15);
+  line-height: 24px;
+  cursor: pointer;
+}
+.right-accordion > h2 {
+  font-family: "Means Web";
+  font-size: 20px;
+  color: #007c89;
+  font-weight: 300;
+}
+
+.content--header {
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 72px;
+}
+
+.content--header > div:first-child {
+  margin-left: -30px;
+  font-size: 13px;
+  font-family: "Graphik Web Light";
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.content--header > div:last-child {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #dbd9d2;
+  border-top: 3px solid black;
+  transform: rotate(40deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #241c15;
+  font-weight: 300;
+  margin: 10px;
+}
+.content--header > div:last-child span {
+  transform: rotate(-40deg);
+}
+
+.container--camp {
+  margin-top: -35px;
+}
+
+.container--camp > p {
+  font-size: 13px;
+  text-align: center;
+  line-height: 20px;
+  font-family: "Graphik Web Regular";
+  margin: 35px 0;
+}
+
+.container--camp > p a {
+  color: #004e56;
+  font-weight: 500;
+  font-family: "Graphik Web Medium";
+  font-size: 13px;
+  padding-left: 5px;
+}
+.container--camp h3 {
+  font-size: 32px;
+  font-family: "Means Web";
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.card-container {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
+  gap: 24px;
+}
+
+.card {
+  border: 1px solid #efeeea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 12px transparent;
+  padding-bottom: 32px;
+  justify-content: space-between;
+  color: #241c15;
+  font-family: "Graphik Web Regular";
+  cursor: pointer;
+}
+
+.card button {
+  cursor: pointer;
+}
+
+.card-contact.card {
+  flex-direction: row;
+  padding-bottom: 0;
+  padding-right: 32px;
+  margin: 40px 0;
+}
+
+.card-contact.card > img {
+  width: 22%;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgb(36 28 21 / 12%);
+  border: 1px solid transparent;
+  transition: box-shadow 0.2s ease-in-out 0s,
+    -webkit-box-shadow 0.2s ease-in-out 0s;
+}
+
+.card-teal.card-btn {
+  color: #fff;
+  background: teal;
+}
+.card-btn {
+  border: none;
+  transition: border 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s,
+    background-color 0.2s ease-in-out 0s;
+  line-height: 44px;
+  white-space: nowrap;
+  padding: 0 32px;
+  background-color: transparent;
+  border: 1px solid teal;
+  color: teal;
+  font-weight: 500;
+  font-family: "Graphik Web Medium";
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-title {
+  font-size: 20px;
+  line-height: 28px;
+  padding: 0px 24px;
+  font-weight: 400;
+}
+
+.card-des {
+  font-size: 13px;
+  line-height: 20px;
+  margin: -8px 0px 16px;
+  padding: 0px 24px;
+  color: rgba(36, 28, 21, 0.65);
+}
+
+.container-audience {
+  border-top: 1px solid rgba(36, 28, 21, 0.15);
+  display: flex;
+  gap: 30px;
+  padding-top: 60px;
+}
+
+.audience1 {
+  flex-basis: 65%;
+}
+.audience1 > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 1px solid #efeeea;
+  font-family: "Graphik Web Regular";
+}
+.audience1 h2,
+.audience2 h2 {
+  font-family: "Means Web";
+  font-size: 20px;
+  font-weight: 300;
+}
+.audience1 h1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: -10px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid rgba(36, 28, 21, 0.3);
+}
+
+.audience1 > div:nth-child(2) {
+  padding: 20px 0;
+}
+.audience1 > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.audience2 {
+  flex-basis: 32%;
+  font-family: "Graphik web Regular";
+}
+
+.audience2 p {
+  font-size: 13px;
+  font-family: "Graphik web Medium";
+}
+
+.audience2 > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #efeeea;
+  padding: 13px 0;
+}
+
+.audience2 > div:nth-child(2) h1 {
+  margin-bottom: -13px;
+}
+
+.audience2 > div:last-child {
+  padding: 25px 0;
+}
+
+.audience2 > div:last-child > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-teal {
+  color: #004e56;
+}

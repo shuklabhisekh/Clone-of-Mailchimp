@@ -1,0 +1,77 @@
+/* .whiteLogin {
+  /* margin-right: 20px; 
+  /* overflow-y: hidden; 
+} */
+.whiteLogin > div {
+  width: 100%;
+  padding: 20px;
+  font-family: "Graphik Web Regular", "Helvetica Neue";
+  box-sizing: border-box;
+}
+/* .email {
+  outline-color: cyan;
+} */
+
+#email,
+#password {
+  padding: 10px;
+}
+
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 2px;
+}
+
+.forgotPasswordUsername {
+  display: flex;
+  justify-content: space-between;
+  width: 68%;
+  color: rgb(0, 124, 137);
+  margin: auto;
+  margin-top: 20px;
+}
+.forgotPasswordUsername > a,
+#createAcount {
+  color: rgb(0, 124, 137);
+  text-decoration: underline;
+  font-family: "Graphik Web Regular", "Helvetica Neue", Helvetica, Arial,
+    Verdana, sans-serif;
+  cursor: pointer;
+}
+#createAcount > a {
+  color: rgb(0, 124, 137);
+}
+
+#copyright {
+  margin-top: 65px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 12px;
+}
+
+#username {
+  font-weight: 500;
+  font-family: "Graphik Web Medium", "Helvetica Neue", Helvetica, Arial, Verdana,
+    sans-serif;
+}
+#needMailchimp {
+  font-family: "Graphik Web Regular", "Helvetica Neue", Helvetica, Arial,
+    Verdana, sans-serif;
+  font-weight: 400;
+  margin: 14px 0px;
+}
+
+#loginTitle {
+  font-weight: 500;
+  font-size: 44px;
+  margin-top: 0px;
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+}
+
+#logo {
+  height: 40px;
+}
+
+#loginButton {
+  height: 50px;
+  border-radius: 2px;
+}

@@ -1,0 +1,136 @@
+.container--allcampaigns {
+  margin-left: -25px;
+  font-family: "Graphik Web Regular";
+}
+
+.container--allcampaigns .audi {
+  padding: 0;
+}
+
+.header--allcampaigns {
+  display: flex;
+  gap: 20px;
+  /* padding: 10px 15px; */
+  border-bottom: 1px solid #d9d9d9;
+  /* padding: 10px 0; */
+  color: rgba(36, 28, 21, 0.65);
+  margin-top: 75px;
+}
+
+.allcampaigns--nav h3 {
+  margin: 0px 0px 6px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-top: 30px;
+  font-family: "Graphik Web Medium";
+}
+
+.allcampaigns--nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 8px;
+}
+
+.allcampaigns--nav ul li div {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+  padding: 10px 0;
+  color: rgba(36, 28, 21, 0.65);
+}
+
+.showall--camp {
+  display: flex;
+  gap: 100px;
+}
+
+.right-side-allcampaigns {
+  flex: 1;
+}
+.right--allcampaigns {
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-between;
+}
+
+.right--allcampaigns input {
+  width: 50%;
+  padding: 8px 5px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+
+.right--allcampaigns div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.right--allcampaigns div select {
+  padding: 10px 12px;
+}
+
+.right--allcampaigns + p {
+  margin: 0;
+  margin-top: -15px;
+}
+
+.lists-allcamp {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+.lists-allcamp > div:first-child {
+  display: flex;
+  gap: 25px;
+}
+.imgIcon--allcamp {
+  width: 24px;
+  height: 25px;
+  background: url(https://us14.admin.mailchimp.com/release/1.1.185da76e69a4acdd5aa8860e5d9c35711871e6083/images/sprites/channel-icons-v4.svg)
+    no-repeat;
+  background-position: 0 -32px;
+  background-size: 24px 313px;
+}
+
+.tag--allcamps {
+  background-color: #efeeea;
+  color: #241c15;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Graphik Web Medium";
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 200px;
+  height: 24px;
+  padding: 2px 9px;
+  margin: 0 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns--allcamps {
+  display: flex;
+  align-items: flex-start;
+  gap: 1px;
+}
+
+.btns--allcamps button {
+  padding: 12px 20px;
+  border: none;
+  background: #efeeea;
+  font-family: "Graphik Web Medium";
+  font-weight: 500;
+}
+
+.btns--allcamps img {
+  padding: 10px 15px;
+  background: #efeeea;
+}

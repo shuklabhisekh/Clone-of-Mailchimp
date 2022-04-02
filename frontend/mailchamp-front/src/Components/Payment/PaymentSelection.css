@@ -1,0 +1,248 @@
+#page {
+  color: rgb(36, 28, 21);
+}
+#paymentNav {
+  height: 60px;
+  background-color: rgb(239, 238, 234);
+  /* --typeface-brand: "Means Web",Georgia,Times,"Times New Roman",serif; */
+  font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana,
+    sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+#selectaPlan {
+  margin-top: 20px;
+}
+#x {
+  margin-top: 20px;
+  color: black;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#selectionSmall {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Graphik Web Regular", Georgia, Times, "Times New Roman", serif;
+}
+#ArrowForwardIosIcon {
+  height: 12px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+#selectionSmall > div {
+  margin-left: 10px;
+  color: rgb(140, 140, 140);
+}
+#selectionSmall > div:first-child {
+  color: darkcyan;
+}
+#selectionBox {
+  width: 84%;
+  height: 470px;
+  margin: auto;
+  margin-top: 15px;
+}
+#recommend {
+  width: 190px;
+  font-weight: 600;
+  padding: 4px;
+  background-color: darkcyan;
+  font-size: 14px;
+  color: white;
+  /* border-radius: 2px; */
+  margin-left: 198px;
+}
+
+#PriceSummary {
+  /* border: 2px solid maroon; */
+  display: grid;
+  grid-template-columns: 69% 28%;
+  justify-content: space-between;
+  height: 90%;
+}
+
+#summaryCard {
+  height: 100%;
+  border: 1px solid gainsboro;
+}
+#priceCard {
+  /* border: 1px solid black; */
+  height: 75%;
+  display: grid;
+  font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana,
+    sans-serif;
+
+  grid-template-columns: repeat(4, 25%);
+}
+#priceCard > div {
+  border: 1px solid gainsboro;
+  height: 100%;
+  text-align: center;
+}
+#premiumInput {
+  /* border: 1px solid red; */
+
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px;
+  font-size: 28px;
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+}
+#premiumInput > div {
+  margin-top: -5px;
+}
+#premiumAdvanced {
+  text-align: left;
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  font-size: 14px;
+  line-height: 20px;
+}
+#PremiumYou {
+  margin-top: 55px;
+  font-size: 14px;
+}
+#PremiumPriceLogo {
+  /* border: 3px solid blueviolet; */
+  display: flex;
+  width: 92%;
+  /* margin: auto; */
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  /* margin-left: 5px; */
+}
+.PremiumPriceLogo0 {
+  margin-left: 10px;
+  /* border: 1px solid cyan; */
+}
+.PremiumPriceLogo3 {
+  margin-left: 60px;
+  /* border: 1px solid cyan; */
+}
+.PremiumPriceLogo2 {
+  margin-left: 40px;
+}
+.PremiumPriceLogo1 {
+  margin-left: 30px;
+}
+#essential {
+  border: 7px solid darkcyan;
+  border: none;
+}
+
+#priceLogo {
+  font-size: 28px;
+  /* border: 1px solid brown; */
+  margin-top: 16px;
+  text-align: center;
+}
+#PremiumPriceLogo > div:last-child {
+  font-size: 54px;
+}
+#month {
+  font-size: 14px;
+  margin: 20px 0px;
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+}
+#tenthousand {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#tenthousand > span {
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+}
+
+#greyPart {
+  height: 60px;
+  background-color: rgb(239, 238, 234);
+  padding: 20px;
+}
+
+#purchaseSummary {
+  margin-top: -10px;
+  font-size: 26px;
+  text-align: left;
+}
+#billedIn {
+  /* border: 1px solid red; */
+  text-align: left;
+}
+#paymentSelectOption {
+  margin-left: 5px;
+  border: none;
+  background-color: transparent;
+  color: darkcyan;
+  font-size: 16px;
+  cursor: pointer;
+}
+#otherPart {
+  padding: 20px;
+  padding-bottom: 10px;
+  text-align: left;
+
+  font-size: 14px;
+  font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana,
+    sans-serif;
+}
+#essentialPrice {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+#fivehun {
+  margin: 10px 0px;
+}
+
+#otherPartDetail {
+  line-height: 24px;
+  margin-top: 50px;
+  font-size: 12px;
+}
+#learnMore {
+  font-size: 12px;
+  color: darkcyan;
+  font-weight: 600;
+  margin-top: 10px;
+}
+#upgrade {
+  border: none;
+  background-color: darkcyan;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 40px;
+  height: 43px;
+  cursor: pointer;
+}
+
+#upgrade a {
+  color: #fff;
+}
+#upgrade:hover {
+  background-color: #004e56;
+}
+#comparePlan {
+  display: flex;
+  width: 84%;
+  margin: auto;
+  color: darkcyan;
+  /* justify-content: flex-end; */
+  font-weight: 600;
+  margin-top: -50px;
+  cursor: pointer;
+}
+#arrowForwardCompare {
+  height: 13px;
+  text-align: center;
+  margin-top: 4px;
+}

@@ -1,0 +1,206 @@
+.sidemenu {
+  height: 100%;
+  width: 265px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-right: 1px solid rgba(36, 28, 21, 0.15);
+  border-left: 8px solid #ffe01b;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidemenu-small.sidemenu {
+  width: 70px;
+}
+
+.sidemenu-small .admin-logo img {
+  width: 150px;
+}
+
+.sidemenu-small:hover {
+  width: 265px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.imghide {
+  display: none;
+}
+
+.hoverimg {
+  display: block;
+}
+.hoverimg + button {
+  display: none;
+}
+
+.sidemenu-small:hover .hoverimg {
+  display: none;
+}
+
+.sidemenu-small:hover .hoverimg + button {
+  display: block;
+}
+
+.profileName + div {
+  display: none;
+}
+
+.sidemenu-small:hover .profileName + div {
+  display: initial;
+}
+
+.sidemenu-small:hover .showname {
+  display: flex !important;
+}
+
+.showname {
+  display: block !important;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+  padding: 10px 20px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.create {
+  padding: 10px 13px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-family: "Means Web";
+}
+
+.collpase {
+  border: 2px solid black;
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+
+.collpase:before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 100%;
+  bottom: -0.5px;
+  background: teal;
+}
+
+.admin-logo {
+  padding: 18px;
+  padding-bottom: 15px;
+  justify-content: space-between;
+}
+
+.profile {
+  /* height: 16vh; */
+  padding: 10px;
+}
+
+.profile > button {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 45px;
+  background-color: #d1e7ea;
+  color: #004e56;
+}
+
+.profile > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.accor-subList {
+  font-size: 13px;
+  color: #241c15;
+  line-height: 24px;
+  font-family: "Graphik Web Regular";
+  list-style: none;
+  padding: 0;
+  margin-top: -3px;
+}
+.accor-subList li {
+  padding: 3px 0;
+  padding-left: 60px;
+  cursor: pointer;
+}
+
+.dashboard-profile {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Means web";
+  margin-right: 20px;
+  background: #faeec9;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.profile-details {
+  position: absolute;
+  z-index: 55;
+  bottom: 10px;
+  left: 6%;
+  box-shadow: 0 4px 12px rgb(36 28 21 / 12%);
+  border: 1px solid #dbd9d2;
+  border-radius: 4px;
+
+  background: #fff;
+  width: 255px;
+  padding: 15px;
+}
+
+.profile-details > div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile-details ul {
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.profile-details ul li {
+  padding: 8px 16px;
+  padding-left: 0;
+  color: #241c15;
+  cursor: pointer;
+}
+
+.profile-details > p {
+  font-size: 13px;
+  margin: 0;
+  color: rgba(36, 28, 21, 0.65);
+}
+
+#ownertag {
+  color: rgb(36, 28, 21);
+  background-color: #efeeea;
+  font-size: 13px;
+  padding: 2px 8px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
