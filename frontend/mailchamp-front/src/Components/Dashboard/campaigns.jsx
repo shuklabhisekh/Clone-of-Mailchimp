@@ -50,13 +50,14 @@ export const Campaign = () => {
     if (contacts != null && fromdata != "" && subject != "" && html != null) {
       setsend(true);
     }
-  }, [removeItems]);
+  }, []);
   //GETING DATA
   const [loader, setloader] = useState(false);
   function storeData() {
     setloader(true);
     let [sub, prev] = subject;
     let data = { contacts, fromdata, sub, prev, html };
+    //SENDING MAIL
     axios
       .post("http://localhost:3001/sendmail", {
         data,
@@ -71,8 +72,29 @@ export const Campaign = () => {
         setloader(false);
         alert("failed to send emails..");
       });
+    StoringData("send");
     removeItems();
     // console.log(data);
+  }
+
+  function StoringData(Status) {
+    let { user_data } = JSON.parse(localStorage.getItem("user"));
+    const user_id = user_data._id;
+    let [sub, prev] = subject;
+    let data = { contacts, fromdata, sub, prev, html };
+    data["status"] = Status;
+    data["title"] = name;
+    data["user_id"] = user_id;
+    console.log("storing data", data);
+    //STORING DATA
+    axios
+      .post(`http://localhost:3001/campaigns/${user_id}`, data)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   function removeItems() {
@@ -98,7 +120,9 @@ export const Campaign = () => {
           </div>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
-          <a className="finish-btn">Finish later</a>
+          <a className="finish-btn" onClick={() => StoringData("draft")}>
+            Finish later
+          </a>
           <button className="grey-btn">Schedule</button>
           <button
             className={send ? "active-send-btn" : "grey-btn"}

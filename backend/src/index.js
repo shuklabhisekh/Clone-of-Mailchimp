@@ -14,7 +14,7 @@ app.post("/sendmail", sendMails);
 const user_controller = require("./controllers/user_controller");
 const subscriber_controller = require("./controllers/subscriber_controller");
 const mailcontroller = require("./controllers/Send_mail");
-
+const campaigns_controller = require("./controllers/campaigns.controller");
 const { register, login } = require("./controllers/auth_controller");
 
 let port = process.env.PORT || 3001;
@@ -25,6 +25,8 @@ app.use("/user", user_controller);
 app.use("/subscriber", subscriber_controller);
 
 app.use("/mails", mailcontroller);
+
+app.use("/campaigns", campaigns_controller);
 
 app.post("/register", register);
 

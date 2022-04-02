@@ -25,7 +25,11 @@ export const Sidemenu = ({ stateToggle, toggle, getProfile }) => {
     {
       title: "Campaigns",
       icon: "sidemenu-icon/champ.svg",
-      content: ["All campaigns", "Email templates", "Reports"],
+      content: [
+        <Link to="/dashboard/allcampaigns">All campaigns</Link>,
+        "Email templates",
+        "Reports",
+      ],
     },
     {
       title: "Automations",

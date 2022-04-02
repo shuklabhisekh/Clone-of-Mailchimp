@@ -28,7 +28,7 @@ export const AllContacts = () => {
     <div style={{ marginLeft: "-50px" }}>
       <div className="audi">
         <h1>Audience</h1>
-        <h2>abc.com</h2>
+        <h2>{user_data.email}</h2>
         <p>Your audience has 1 contacts. 1 of these are subscribers.</p>
       </div>
       <div className="over">
