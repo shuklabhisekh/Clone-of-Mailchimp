@@ -2,14 +2,26 @@ body {
   font-family: "Varela Round", sans-serif;
 }
 
+.main-succ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  backdrop-filter: blur(3px);
+}
 .successfull-msg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 888;
+
   background: #fff;
-  box-shadow: 0px 2px 2px rgb(0 0 0 / 10%);
+  border-radius: 2px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .modal-confirm {
   color: #636363;

@@ -141,7 +141,7 @@ export default function SignInSide() {
               onSubmit={handleSubmit}
               sx={{ mt: 1 }}
             >
-              <div id="username">Username</div>
+              <div id="username">Email</div>
               <TextField
                 margin="normal"
                 required
