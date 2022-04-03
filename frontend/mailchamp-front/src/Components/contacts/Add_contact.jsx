@@ -3,10 +3,11 @@ import "./Add_contact.css";
 import { useState } from "react";
 import { Tagbutton } from "./tags";
 import axios from "axios";
+import { useNavigate } from "react-router";
 export const Add_contact = () => {
   const [show, setShow] = useState(false);
   // const [dummy, setDummy] = useState(true)
-
+  const navigate = useNavigate();
   const [text, setText] = useState({});
 
   const handleChange = (e) => {
@@ -38,6 +39,7 @@ export const Add_contact = () => {
           .post(`http://localhost:3001/subscriber/${user_id}`, register_data)
           .then((res) => {
             console.log(res);
+            alert("successfully added...!");
           })
           .catch((err) => {
             console.log(err);
@@ -46,6 +48,7 @@ export const Add_contact = () => {
       } catch (err) {
         console.log(err);
       }
+      navigate("/dashboard");
     }
   };
 
@@ -81,7 +84,7 @@ export const Add_contact = () => {
         <br />
         <input
           type="text"
-          name="emailAddress"
+          name="email"
           className="emailInput"
           value={emailAddress}
           onChange={handleChange}
@@ -93,7 +96,7 @@ export const Add_contact = () => {
         <br />
         <input
           type="text"
-          name="firstname"
+          name="first_name"
           className="emailInput"
           value={firstname}
           onChange={handleChange}
@@ -105,7 +108,7 @@ export const Add_contact = () => {
         <br />
         <input
           type="text"
-          name="lastname"
+          name="last_name"
           className="emailInput"
           value={lastname}
           onChange={handleChange}
