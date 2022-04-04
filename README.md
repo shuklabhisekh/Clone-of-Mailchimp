@@ -28,6 +28,9 @@ Send a campaign to your entire list, or target people based on available list da
 User can manually upload a copy & paste contacts and can add them in their subscriber list.
 
 
+## Project Overview
+https://user-images.githubusercontent.com/69167064/161446359-8187da75-649d-4e75-8918-fe5c0f1a3132.mp4
+
 <!-- ## Glimps Of my project
 
 1. Landing Page
