@@ -90,5 +90,5 @@ https://user-images.githubusercontent.com/69167064/161446359-8187da75-649d-4e75-
 
 <!-- ### <u>You can read more about our project on our blog : <a href="https://shuklabhisekh.medium.com/clone-of-theory-com-including-frontend-backend-6db940b42d23" target="_blank">Clone of Theory.com</a> </u> -->
 
-# Thank You :sparkling_heart
+# Thank You : sparkling_heart
 
