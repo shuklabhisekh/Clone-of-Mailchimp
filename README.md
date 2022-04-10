@@ -61,7 +61,7 @@ https://user-images.githubusercontent.com/69167064/161446359-8187da75-649d-4e75-
 - <a href="https://github.com/shuklabhisekh" target="_blank">Github</a>
 
 - <a href="https://www.linkedin.com/in/shuklabhisekh/" target="_blank">Linkedin</a>
-
+<!--Akshay Jagtap -->
 <b>Akshay Jagtap</b>
 
 - <a href="https://github.com/akshayjagtap1111" target="_blank">Github</a>
